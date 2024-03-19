@@ -241,7 +241,23 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 20px;
   width: 33%;
+}
+
+.featured-project a {
+  display: flex;
+  justify-content: center;
+}
+
+.featured-project img {
+  max-width: 90%;
+  height: auto;
+}
+
+#center-project {
+  border-left: 2px solid #E9B14C ;
+  border-right: 2px solid #E9B14C ;
 }
 
 #about, #skills {
