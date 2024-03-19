@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Ken Ellingsen</title>
+  <title>Ken Ellingsen | Front End Developer</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,6 +16,12 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@500;700&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -24,26 +30,94 @@
 
 <body>
   <header> <!-- Header starts -->
-    <div class="title">
-      <h1>Ken Ellingsen</h1>
-    </div>
-    <div class="menu">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="about/index.html">About</a></li>
-        <li><a href="resume/index.html">Resume</a></li>
-        <li><a href="projects/index.html">Projects</a></li>
-        <li><a href="contact/index.html">Contact</a></li>
-      </ul>
+    <div class="content-wrapper">
+      <img src="img/header-image.jpg">
+      <div class="name-title">
+        <h1>Ken Ellingsen</h1>
+        <h3>Front End Developer</h3>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="projects/index.html">Projects</a></li>
+          <li><a href="skills/index.html">Skills</a></li>
+          <li><a href="about/index.html">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <body> <!-- Body starts -->
-    <p>Home page placeholder.</p>
-  </body>
+  <main> <!-- Main content starts -->
+    <section id="featured-projects">
+      <h2>Featured Projects</h2>
+      <div class="featured-projects-container">
+        <div class="featured-project">
+          <h3>Title</h3>
+          <img>
+          <p>Details about project</p>
+        </div>
+        <div class="featured-project">
+          <h3>Title</h3>
+          <img>
+          <p>Details about project</p>
+        </div>
+        <div class="featured-project">
+          <h3>Title</h3>
+          <img>
+          <p>Details about project</p>
+        </div>
+      </div>
+      <p>Check out my GitHub Repo page to see all of my work here!</p>
+    </section>
 
-  <footer><!-- Footer starts-->
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-details">
+        <p>Hey! I’m Ken Ellingsen, a front end web developer with a passion for making sleek and easy to use
+          websites.</p>
+        <p>I’ve always had an interest in expanding my tech knowledge and diving into development felt like one of the
+          best ways to do it. While my skills primarily focus on front end development right now, I’m continuing to
+          expand
+          my
+          skill set with backend development tools and knowledge to become a well rounded full stack developer.</p>
+        <p>When I'm not parked in front of my laptop or watching a movie you can usually find me enjoying the outdoors
+          while I'm hiking,
+          backpacking, skiing, or cycling.</p>
+      </div>
+    </section>
 
+    <section id="skills">
+      <h2>Skills</h2>
+      <nav class="skills-list">
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>React</li>
+        </ul>
+        <ul>
+          <li>Git/GitHub</li>
+          <li>CodeSandbox</li>
+          <li>Chrome DevTools</li>
+          <li>Visual Studio Code</li>
+        </ul>
+      </nav>
+    </section>
+
+  </main>
+
+  <footer id="contact"><!-- Footer starts-->
+    <div class="content-wrapper">
+      <div class="contact-info">
+        <h3>Reach out if you'd like to connect!</h3>
+        <a href="mailto:ken.ellingsen@gmail.com">ken.ellingsen@gmail.com</a>
+        <ul>
+          <li><a href="https://linkedin.com/"><img src="img/linkedin.png" alt="linkedin icon"></a></li>
+          <li><a href="https://github.com/"><img src="img/github.png" alt="github icon"></a></li>
+        </ul>
+      </div>
+    </div>
   </footer>
 
 
