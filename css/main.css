@@ -89,7 +89,6 @@ textarea {
 
 /********** Global Syles **********/
 * {
-  /* background-color: whitesmoke; */
   /* border: 1px dotted red; */
 }
 
@@ -146,7 +145,6 @@ header .content-wrapper{
   align-items: center;
   width: 100%;
   margin: 0;
-  box-shadow: 0 2px 4px #222;
 }
 
 .header-info {
@@ -213,8 +211,23 @@ header a {
 footer {
   background-color: #152A3E;
   color: whitesmoke;
-  padding: 20px 0;
-  
+  padding: 20px 0; 
+}
+
+footer .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer h2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.socials, form {
+  width: 30%;
 }
 
 
@@ -271,10 +284,22 @@ main {
   border-right: 2px solid #E9B14C ;
 }
 
+#repo-blurb {
+  font-style: italic;
+}
+
 #about, #skills {
   background: #CAC691;
   width: 49.9%;
   border-radius: 20px 20px 0 0;
+}
+
+#about h2, #skills h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  width: 80%;
+  border-bottom: 2px solid #152A3E;
 }
 
 #about {
@@ -304,12 +329,21 @@ main {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin: 5px 0;
 }
 
 .skills-list ul li {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  text-align: center;
   width: 20%;
+}
+
+.skills-list ul li img {
+  width: 40%;
+  height: auto;
 }
 
 /********** About Page Styles **********/
