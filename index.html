@@ -31,10 +31,12 @@
 <body>
   <header> <!-- Header starts -->
     <div class="content-wrapper">
-      <img src="img/header-image.jpg" alt="Ken Ellingsen">
-      <div class="name-title">
-        <h1>Ken Ellingsen</h1>
-        <h3>Front End Developer</h3>
+      <div class="header-info">
+        <img src="img/header-image.jpg" alt="Ken Ellingsen">
+        <div class="name-title">
+          <h1>Ken Ellingsen</h1>
+          <h3>Front End Developer</h3>
+        </div>
       </div>
       <nav>
         <ul>
@@ -54,7 +56,8 @@
       <div class="featured-projects-container">
         <div class="featured-project">
           <h3>Sticky Note UI</h3>
-          <a href="https://wl85y4.csb.app/" target="_blank"><img src="img/sticky-note-ui.png" alt="Sticky Note UI screenshot"></a>
+          <a href="https://wl85y4.csb.app/" target="_blank"><img src="img/sticky-note-ui.png"
+              alt="Sticky Note UI screenshot"></a>
           <p>An app built using React to add, remove, and edit sticky notes while taking advantage of the
             browser's local storage to save the notes. Built as a greenfield project, this app displays the use of
             managed component trees, data flow, and interactivity through the development process from the ground up.
@@ -63,14 +66,16 @@
         </div>
         <div id="center-project" class="featured-project">
           <h3>Guess the Word Game</h3>
-          <a href="https://ken-ellingsen.github.io/guess-the-word-game/" target="_blank"><img src="img/guess-the-word-game.png" alt="Guess the Word Game screenshot"></a>
+          <a href="https://ken-ellingsen.github.io/guess-the-word-game/" target="_blank"><img
+              src="img/guess-the-word-game.png" alt="Guess the Word Game screenshot"></a>
           <p>A web app built using HTML5, CSS3, JavaScript, and an API to source random words. In this game players
             guess the word by entering one letter at a time. If the player guesses all the letters correctly before they
             use up their allotted guesses, they win!</p>
         </div>
         <div class="featured-project">
           <h3>Hotel Booking UI</h3>
-          <a href="https://xwf5tx.csb.app/" target="_blank"><img src="img/hotel-booking-ui.png" alt="Hotel Booking UI screenshot"></a>
+          <a href="https://xwf5tx.csb.app/" target="_blank"><img src="img/hotel-booking-ui.png"
+              alt="Hotel Booking UI screenshot"></a>
           <p>A sample hotel booking app built using React. Modified from from a previous version to take advantage of
             the use of stateful React components, this app showcases the ability to toggle different filter options to
             find hotels matching the selected criteria.</p>
@@ -117,13 +122,20 @@
 
   <footer id="contact"><!-- Footer starts-->
     <div class="content-wrapper">
-      <div class="contact-info">
-        <h3>Reach out if you'd like to connect!</h3>
-        <a href="mailto:ken.ellingsen@gmail.com">ken.ellingsen@gmail.com</a>
+      <h3>Reach out if you'd like to connect!</h3>
+      <nav class="socials">
         <ul>
           <li><a href="https://linkedin.com/"><img src="img/linkedin.png" alt="linkedin icon"></a></li>
           <li><a href="https://github.com/"><img src="img/github.png" alt="github icon"></a></li>
         </ul>
+      </nav>
+      <div class="form">
+        <form>
+          <input type="text" name="name" aria-label="Write your full name." id="full-name" placeholder="First & Last Name" required>
+          <input type="text" name="replyto" aria-label="Write your email address." id="email-address" placeholder="your.email@email.com" required>
+          <textarea name="message" aria-label="Write your message." id="message" placeholder="Message" required=""></textarea>
+          <button class="button" type="submit">SEND</button>
+        </form>
       </div>
     </div>
   </footer>
