@@ -89,6 +89,7 @@ textarea {
 
 /********** Global Syles **********/
 * {
+  box-sizing: border-box;
   /* border: 1px dotted red; */
 }
 
@@ -113,23 +114,32 @@ a {
   text-decoration: none;
 }
 
-h2 {
+h1, h2, h3, h4 {
   font-family: 'Poppins', sans-serif;
-  /* font-size: 1.875em; */
-  font-weight: 500;
+}
+
+h1 {
   margin: 0;
 }
 
-h3,
+h2 {
+  margin: 20px 0;
+  height: min-content;
+}
+
+h3 {
+  margin: 0 0 20px 0;
+  font-weight: 150;
+}
+
 h4 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.125em;
-  font-weight: 500;
+  margin: 10px 0 5px 0;
+  font-weight: 100;
 }
 
 p {
-  /* font-size: 0.875em; */
-  line-height: 1.285;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
 }
 
 /********** Header Styles **********/
@@ -138,13 +148,12 @@ header {
   background-color: #152A3E;
 }
 
-header .content-wrapper{
+header .header-container {
   display: flex;
   flex-direction: flex-start;
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
-  margin: 0;
 }
 
 .header-info {
@@ -209,25 +218,74 @@ header a {
 
 /********** Footer Styles **********/
 footer {
-  background-color: #152A3E;
+  background: #152A3E;
   color: whitesmoke;
-  padding: 20px 0; 
-}
-
-footer .content-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
+  padding: 20px 0;
 }
 
 footer h2 {
+  margin: 0 0 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 45%;
+  padding: 0 20px;
+}
+
+.socials ul {
+  display: flex;
+  align-items: center;
+}
+
+.socials ul li {
+  margin: 10px 20px;
+}
+
+.socials i {
+  font-size: 5em;
+  color: whitesmoke;
+}
+
+.contact-form {
+  width: 55%;
+}
+
+form {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  width: 70%;
+  max-width: 500px;
+  padding: 10px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
 }
 
-.socials, form {
-  width: 30%;
+input {
+  width: 45%;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  margin: 10px 0;
+}
+
+button {
+  width: 40%;
 }
 
 
@@ -239,11 +297,15 @@ main {
   background: whitesmoke;
 }
 
+main .content-container {
+  margin: 0 20px;
+}
+
 #featured-projects, #about, #skills {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   flex-wrap: wrap;
-  padding: 20px 0;
 }
 
 #featured-projects {
@@ -256,7 +318,6 @@ main {
 .featured-projects-container {
   display: flex;
   justify-content: center;
-  margin: 10px 0;
   width: 100%;
 }
 
@@ -264,19 +325,28 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 20px;
   width: 33%;
 }
 
-.featured-project a {
+.featured-project .content-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featured-project a {
+  max-width: 90%;
+  text-align: center;
 }
 
 .featured-project img {
-  max-width: 90%;
+  width: 100%;
   border-radius: 10px;
   height: auto;
+}
+
+.featured-project p {
+  margin: 20px 0;
 }
 
 #center-project {
@@ -286,6 +356,7 @@ main {
 
 #repo-blurb {
   font-style: italic;
+  margin: 20px 0;
 }
 
 #about, #skills {
@@ -296,8 +367,6 @@ main {
 
 #about h2, #skills h2 {
   text-align: center;
-  margin-bottom: 10px;
-  padding-bottom: 5px;
   width: 80%;
   border-bottom: 2px solid #152A3E;
 }
@@ -306,9 +375,12 @@ main {
   border-right: 1px solid whitesmoke;
 }
 
+#about .content-container {
+  margin-bottom: 20px;
+}
+
 #about p {
-  margin: 0 10px;
-  padding: 5px 0;
+  padding-bottom: 5px;
 }
 
 #skills {
@@ -323,13 +395,14 @@ main {
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  padding-top: 10px;
 }
 
 .skills-list ul {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 5px 0;
+  margin-bottom: 10px;
 }
 
 .skills-list ul li {
@@ -339,11 +412,13 @@ main {
   justify-content: center;
   text-align: center;
   width: 20%;
+  margin: 0 10px;
 }
 
-.skills-list ul li img {
-  width: 40%;
-  height: auto;
+.skills-list ul li i {
+  font-size: 3em;
+  color:#152A3E;
+  padding-bottom: 2px;
 }
 
 /********** About Page Styles **********/

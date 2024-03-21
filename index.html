@@ -22,6 +22,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@500;700&display=swap"
     rel="stylesheet">
 
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/d59606f9b8.js" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -30,7 +33,7 @@
 
 <body>
   <header> <!-- Header starts -->
-    <div class="content-wrapper">
+    <div class="header-container">
       <div class="header-info">
         <img src="img/header-image.jpg" alt="Ken Ellingsen">
         <div class="name-title">
@@ -56,29 +59,36 @@
       <div class="featured-projects-container">
         <div class="featured-project">
           <h3>Sticky Note UI</h3>
-          <a href="https://wl85y4.csb.app/" target="_blank"><img src="img/sticky-note-ui.png"
-              alt="Sticky Note UI screenshot"></a>
-          <p>An app built using React to add, remove, and edit sticky notes while taking advantage of the
-            browser's local storage to save the notes. Built as a greenfield project, this app displays the use of
-            managed component trees, data flow, and interactivity through the development process from the ground up.
-            The interactivity of the add, removal, and editing showcases the use of various event listeners passing
-            props between modules to achieve their functionality.</p>
+          <div class="content-container">
+            <a href="https://wl85y4.csb.app/" target="_blank"><img src="img/sticky-note-ui.png"
+                alt="Sticky Note UI screenshot"></a>
+            <p>An app built using React to add, remove, and edit sticky notes while taking advantage of the
+              browser's local storage to save the notes. Built as a greenfield project, this app displays the use of
+              managed component trees, data flow, and interactivity through the development process from the ground up.
+              The interactivity of the add, removal, and editing showcases the use of various event listeners passing
+              props between modules to achieve their functionality.</p>
+          </div>
         </div>
         <div id="center-project" class="featured-project">
           <h3>Guess the Word Game</h3>
-          <a href="https://ken-ellingsen.github.io/guess-the-word-game/" target="_blank"><img
-              src="img/guess-the-word-game.png" alt="Guess the Word Game screenshot"></a>
-          <p>A web app built using HTML5, CSS3, JavaScript, and an API to source random words. In this game players
-            guess the word by entering one letter at a time. If the player guesses all the letters correctly before they
-            use up their allotted guesses, they win!</p>
+          <div class="content-container">
+            <a href="https://ken-ellingsen.github.io/guess-the-word-game/" target="_blank"><img
+                src="img/guess-the-word-game.png" alt="Guess the Word Game screenshot"></a>
+            <p>A web app built using HTML5, CSS3, JavaScript, and an API to source random words. In this game players
+              guess the word by entering one letter at a time. If the player guesses all the letters correctly before
+              they
+              use up their allotted guesses, they win!</p>
+          </div>
         </div>
         <div class="featured-project">
           <h3>Hotel Booking UI</h3>
-          <a href="https://xwf5tx.csb.app/" target="_blank"><img src="img/hotel-booking-ui.png"
-              alt="Hotel Booking UI screenshot"></a>
-          <p>A sample hotel booking app built using React. Modified from from a previous version to take advantage of
-            the use of stateful React components, this app showcases the ability to toggle different filter options to
-            find hotels matching the selected criteria.</p>
+          <div class="content-container">
+            <a href="https://xwf5tx.csb.app/" target="_blank"><img src="img/hotel-booking-ui.png"
+                alt="Hotel Booking UI screenshot"></a>
+            <p>A sample hotel booking app built using React. Modified from from a previous version to take advantage of
+              the use of stateful React components, this app showcases the ability to toggle different filter options to
+              find hotels matching the selected criteria.</p>
+          </div>
         </div>
       </div>
       <h3 id="repo-blurb">Check out my GitHub Repo page to see all of my work here!</h3>
@@ -86,10 +96,10 @@
 
     <section id="about">
       <h2>About Me</h2>
-      <div class="about-details">
+      <div class="content-container">
         <p>Hey there! I’m Ken Ellingsen, a front end web developer with a passion for making sleek and easy to use
           websites.</p>
-        <p>I’ve always had an interest in expanding my tech knowledge and diving into development felt like one of the
+        <p>I’ve always had an interest in expanding my tech knowledge so diving into development felt like one of the
           best ways to do it. While my skills primarily focus on front end development right now, I’m continuing to
           expand
           my
@@ -102,42 +112,48 @@
 
     <section id="skills">
       <h2>Skills</h2>
-      <nav class="skills-list">
-        <ul>
-          <li><img src="img/html-icon.png" alt="html icon">HTML5</li>
-          <li><img src="img/css-icon.png" alt="css icon">CSS3</li>
-          <li><img src="img/javascript-icon.png" alt="javascript icon">JavaScript</li>
-          <li><img src="img/react-icon.png" alt="react icon">React</li>
-        </ul>
-        <ul>
-          <li><img src="img/github-icon.png" alt="github icon">Git/GitHub</li>
-          <li><img src="img/codesandbox-icon.png" alt="codesandbox icon">CodeSandbox</li>
-          <li><img src="img/chrome-icon.png" alt="chrome icon">Chrome DevTools</li>
-          <li><img src="img/vs-code-icon.png" alt="visual studio code icon">Visual Studio Code</li>
-        </ul>
-      </nav>
+        <nav class="skills-list">
+          <ul>
+            <li><i class="fa-brands fa-html5"></i>HTML5</li>
+            <li><i class="fa-brands fa-css3-alt"></i>CSS3</li>
+            <li><i class="fa-brands fa-js"></i>JavaScript</li>
+            <li><i class="fa-brands fa-react"></i>React</li>
+          </ul>
+          <ul>
+            <li><i class="fa-brands fa-github"></i>Git/GitHub</li>
+            <li><i class="fa-regular fa-square"></i>CodeSandbox</li>
+            <li><i class="fa-brands fa-chrome"></i>Chrome DevTools</li>
+            <li><i class="fa-solid fa-code"></i>Visual Studio Code</li>
+          </ul>
+        </nav>
     </section>
-
   </main>
 
-  <footer id="contact"><!-- Footer starts-->
-    <div class="content-wrapper">
-      <h2>Reach out if you'd like to connect!</h2>
+
+  <footer id="contact">
+    <h2>Reach out if you'd like to connect!</h2>
+    <div class="footer-container">
       <nav class="socials">
         <ul>
-          <li><a href="https://linkedin.com/"><img src="img/linkedin.png" alt="linkedin icon"></a></li>
-          <li><a href="https://github.com/"><img src="img/github.png" alt="github icon"></a></li>
+          <li><a href="https://www.linkedin.com/in/ken-ellingsen-a6220ba3/"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/ken-ellingsen"><i class="fa-brands fa-github"></i></a></li>
         </ul>
       </nav>
-      <div class="form">
+      <div class="contact-form">
         <form>
-          <input type="text" name="name" aria-label="Write your full name." id="full-name" placeholder="First & Last Name" required>
-          <input type="text" name="replyto" aria-label="Write your email address." id="email-address" placeholder="your.email@email.com" required>
-          <textarea name="message" aria-label="Write your message." id="message" placeholder="Message" required></textarea>
-          <button class="button" type="submit">SEND</button>
+          <div class="contact-info">
+            <input type="text" name="name" aria-label="Write your full name." id="full-name"
+              placeholder="First & Last Name" required>
+            <input type="text" name="replyto" aria-label="Write your email address." id="email-address"
+              placeholder="your.email@email.com" required>
+          </div>
+          <textarea name="message" aria-label="Write your message." id="message" placeholder="Message"
+            required></textarea>
+          <button class="btn" type="submit">SEND</button>
         </form>
       </div>
     </div>
+    <h4>Copyright 2024 | Ken Ellingsen</h4>
   </footer>
 
 
