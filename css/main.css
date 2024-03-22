@@ -244,10 +244,11 @@ footer h2 {
 .socials ul {
   display: flex;
   align-items: center;
+  padding-right: 20px;;
 }
 
 .socials ul li {
-  margin: 10px 20px;
+  margin: 30px 20px 20px 20px;
 }
 
 .socials i {
