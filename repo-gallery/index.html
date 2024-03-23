@@ -1,41 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>GitHub Repo Gallery</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@500&display=swap"
-            rel="stylesheet" />
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-            crossorigin="anonymous" />
-        <link rel="stylesheet" href="../css/normalize.css" />
-        <link rel="stylesheet" href="../css/main.css" />
-        <script src="script.js" defer></script>
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ken Ellingsen | GitHub Repo Gallery</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@500&display=swap"
+        rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/d59606f9b8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script src="script.js" defer></script>
+</head>
 
-    <body id="repo-body">
-        <main class="container">
-            <div class="badge">
-                <div class="circle"></div>
+<body>
+    <header> <!-- Header starts -->
+        <div class="content-wrapper">
+            <div class="header-info">
+                <img src="../img/header-image.jpg">
+                <div class="name-title">
+                    <h1>Ken Ellingsen</h1>
+                    <h3>Front End Developer</h3>
+                </div>
             </div>
-            <h1><i class="fab fa-github-alt"></i> GitHub Repo Gallery</h1>
-            <section class="intro">
-                <div class="overview"></div>
-            </section>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../projects/index.html">Projects</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="../about/index.html">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="repo-body">
+        <div class="repo-container">
+
+            <h1><i class="fa-brands fa-github"></i> GitHub Repo Gallery</h1>
 
             <section class="repos">
                 <input type="text" class="filter-repos hide" placeholder="Search by name" />
+                <form class="checklist">
+                    <input type="checkbox" id="html-css" name="html-css" value="HTML-CSS">
+                    <label for="html-css"> HTML/CSS</label>
+                    <input type="checkbox" id="javascript" name="javascript" value="JavaScript">
+                    <label for="javascript"> JavaScript</label>
+                    <input type="checkbox" id="react" name="react" value="React">
+                    <label for="react"> React</label>
+                </form>
                 <ul class="repo-list"></ul>
             </section>
+
             <section class="repo-data hide"></section>
+
             <div class="button-container">
                 <button class="view-repos hide">Back to Repo Gallery</button>
             </div>
-        </main>
-    </body>
+
+        </div>
+    </main>
+
+    <footer id="contact"> <!-- Footer starts -->
+        <h2>Reach out if you'd like to connect!</h2>
+        <div class="footer-container">
+            <nav class="socials">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/ken-ellingsen-a6220ba3/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                    <li><a href="https://github.com/ken-ellingsen"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </nav>
+            <div class="contact-form">
+                <form>
+                    <div class="contact-info">
+                        <input type="text" name="name" aria-label="Write your full name." id="full-name"
+                            placeholder="First & Last Name" required>
+                        <input type="text" name="replyto" aria-label="Write your email address." id="email-address"
+                            placeholder="your.email@email.com" required>
+                    </div>
+                    <textarea name="message" aria-label="Write your message." id="message" placeholder="Message"
+                        required></textarea>
+                    <button class="btn" type="submit">SEND</button>
+                </form>
+            </div>
+        </div>
+        <h4>Copyright 2024 | Ken Ellingsen</h4>
+    </footer>
+</body>
 
 </html>

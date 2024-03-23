@@ -10,7 +10,8 @@ const getUserInfo = async function () {
     const res = await fetch(`https://api.github.com/users/${username}`);
     const userInfo = await res.json();
     //console.log(userInfo);
-    displayUserInfo(userInfo);
+    // displayUserInfo(userInfo);
+    getRepos();
 };
 
 getUserInfo();
@@ -19,15 +20,10 @@ const displayUserInfo = function (userInfo) {
     const userDiv = document.createElement("div");
     userDiv.classList.add("user-info");
     userDiv.innerHTML =
-        `<figure>
-            <img alt="user avatar" src=${userInfo.avatar_url} />
-        </figure>
-        <div>
-            <p><strong>Name:</strong> ${userInfo.name}</p>
-            <p><strong>Bio:</strong> ${userInfo.bio}</p>
-            <p><strong>Location:</strong> ${userInfo.location}</p>
-            <p><strong>Number of public repos:</strong> ${userInfo.public_repos}</p>
-        </div>`
+        `<p class="name"><strong>Name:</strong> ${userInfo.name}</p>
+        <p class="repo-bio"><strong>Bio:</strong> ${userInfo.bio}</p>
+        <p class="location"><strong>Location:</strong> ${userInfo.location}</p>
+        <p class="num-of-repos"><strong>Number of public repos:</strong> ${userInfo.public_repos}</p>`
     overview.append(userDiv);
     getRepos();
 };
@@ -58,17 +54,14 @@ repoList.addEventListener("click", function (e) {
 const getRepoInfo = async function (repoName) {
     const res = await fetch(`https://api.github.com/repos/${username}/${repoName}`);
     const repoInfo = await res.json();
-    //console.log(repoInfo);
 
     const fetchLanguages = await fetch(repoInfo.languages_url);
     const languageData = await fetchLanguages.json();
-    //console.log(languageData);
 
     let languages = [];
     for (const language in languageData) {
         languages.push(language);
     }
-    //console.log(languages);
 
     displayRepoInfo(repoInfo, languages);
 };
@@ -97,7 +90,6 @@ backButton.addEventListener("click", function () {
 // Dynamic search
 filterInput.addEventListener("input", function (e) {
     const search = e.target.value;
-    //console.log(input);
     const repos = document.querySelectorAll(".repo");
     const lowerSearch = search.toLowerCase();
 
