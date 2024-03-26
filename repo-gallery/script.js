@@ -6,36 +6,17 @@ const backButton = document.querySelector(".view-repos");
 const filterInput = document.querySelector(".filter-repos");
 const username = "ken-ellingsen";
 
-const getUserInfo = async function () {
-    const res = await fetch(`https://api.github.com/users/${username}`);
-    const userInfo = await res.json();
-    //console.log(userInfo);
-    // displayUserInfo(userInfo);
-    getRepos();
-};
-
-getUserInfo();
-
-const displayUserInfo = function (userInfo) {
-    const userDiv = document.createElement("div");
-    userDiv.classList.add("user-info");
-    userDiv.innerHTML =
-        `<p class="name"><strong>Name:</strong> ${userInfo.name}</p>
-        <p class="repo-bio"><strong>Bio:</strong> ${userInfo.bio}</p>
-        <p class="location"><strong>Location:</strong> ${userInfo.location}</p>
-        <p class="num-of-repos"><strong>Number of public repos:</strong> ${userInfo.public_repos}</p>`
-    overview.append(userDiv);
-    getRepos();
-};
-
 const getRepos = async function () {
-    const res = await fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=100`);
-    const repos = await res.json();
+    const fetchRepos = await fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=100`);
+    const repos = await fetchRepos.json();
     displayRepos(repos);
 };
 
-const displayRepos = function (repos) {
+getRepos();
+
+const displayRepos = async function (repos, allLanguages) {
     filterInput.classList.remove("hide");
+
     for (const repo of repos) {
         const li = document.createElement("li");
         li.classList.add("repo");
@@ -62,6 +43,8 @@ const getRepoInfo = async function (repoName) {
     for (const language in languageData) {
         languages.push(language);
     }
+
+    console.log(languages);
 
     displayRepoInfo(repoInfo, languages);
 };
@@ -102,3 +85,26 @@ filterInput.addEventListener("input", function (e) {
         }
     }
 });
+
+// Toggle display by language
+const toggleByLanguage = function () {
+    const htmlCssToggle = document.getElementById('html-css-toggle');
+    const javascriptToggle = document.getElementById('javascript-toggle');
+    const reactToggle = document.getElementById('react-toggle');
+
+    const reposList = document.querySelectorAll(".repo");
+
+    if (htmlCssToggle.checked != true) {
+        for (const repo of reposList) {
+            if (repo.classList.contains('HTML,CSS')){
+                repo.classList.add('hide');
+            }
+        }
+    } else {
+        for (const repo of reposList) {
+            if (repo.classList.contains('HTML,CSS')){
+                repo.classList.remove('hide');
+            }
+        }
+    }
+}

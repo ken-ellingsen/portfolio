@@ -470,7 +470,7 @@ main .content-container {
 
 .repo-container h1 {
   width: 100%;
-  padding: 20px 0 0 0;
+  padding: 20px 0;
   margin: 0;
   font-size: 3.5em;
   text-align: center;
@@ -512,12 +512,9 @@ section .repo-data {
   padding: 10px 30px 30px 30px;
 }
 
-.filter-repos {
-  width: 300px;
-  margin-top: 1em;
-  padding: 1em;
-  margin-bottom: 1em;
-  border: 2px solid #152A3E;
+.repos input{
+  width: 40%;
+  margin-bottom: 20px;
 }
 
 .repo-list {
@@ -554,6 +551,8 @@ section .repo-data {
 
 .repo-data {
   width: 100%;
+  padding: 1em 0 1em 2em;
+  background-color: #CAC691;
 }
 
 .repo-data h3 {
@@ -581,8 +580,7 @@ section .repo-data {
 .button-container {
   width: 100%;
   background-color: whitesmoke;
-  padding-left: 2em;
-  padding-bottom: 2em;
+  padding: 1em 2em;
 }
 
 .view-repos {
