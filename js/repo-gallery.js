@@ -85,26 +85,3 @@ filterInput.addEventListener("input", function (e) {
         }
     }
 });
-
-// Toggle display by language
-const toggleByLanguage = function () {
-    const htmlCssToggle = document.getElementById('html-css-toggle');
-    const javascriptToggle = document.getElementById('javascript-toggle');
-    const reactToggle = document.getElementById('react-toggle');
-
-    const reposList = document.querySelectorAll(".repo");
-
-    if (htmlCssToggle.checked != true) {
-        for (const repo of reposList) {
-            if (repo.classList.contains('HTML,CSS')){
-                repo.classList.add('hide');
-            }
-        }
-    } else {
-        for (const repo of reposList) {
-            if (repo.classList.contains('HTML,CSS')){
-                repo.classList.remove('hide');
-            }
-        }
-    }
-}

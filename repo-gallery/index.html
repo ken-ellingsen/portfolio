@@ -12,7 +12,6 @@
     <script src="https://kit.fontawesome.com/d59606f9b8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/main.css" />
-    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -25,15 +24,19 @@
                     <h3>Front End Developer</h3>
                 </div>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../projects/index.html">Projects</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="../about/index.html">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="navbar">
+                <a href="../index.html" class="nav-item">Home</a>
+                <a href="../projects/index.html" class="nav-item dropdown">Projects</a>
+                <div class="dropdown-content hide">
+                    <a href="../projects/index.html#react-projects">React</a>
+                    <a href="../projects/index.html#javascript-projects">JavaScript</a>
+                    <a href="../projects/index.html#html-css-projects">HTML/CSS</a>
+                    <a href="#">Repo Gallery</a>
+                </div>
+                <a href="../skills/index.html" class="nav-item">Skills</a>
+                <a href="../about/index.html" class="nav-item">About</a>
+                <a href="#contact" class="nav-item">Contact</a>
+            </div>
         </div>
     </header>
 
@@ -78,6 +81,11 @@
         </div>
         <h4>Copyright 2024 | Ken Ellingsen</h4>
     </footer>
+
+    <script src="../js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/repo-gallery.js" defer></script>
 </body>
 
 </html>
