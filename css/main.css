@@ -87,10 +87,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/********** Global Syles **********/
+/*************** Global Syles ***************/
 * {
   box-sizing: border-box;
-  border: 1px dotted red;
+  /* border: 1px dotted red; */
 }
 
 html {
@@ -145,7 +145,7 @@ p {
   margin: 0;
 }
 
-/********** Header Styles **********/
+/*************** Header Styles ***************/
 header {
   display: flex;
   background-color: #152A3E;
@@ -220,7 +220,7 @@ header a {
   color: whitesmoke;
 }
 
-/********** Footer Styles **********/
+/*************** Footer Styles ***************/
 footer {
   background: #152A3E;
   color: whitesmoke;
@@ -295,7 +295,7 @@ button {
 }
 
 
-/********** Home Page Styles **********/
+/*************** Home Page Styles ***************/
 #home-page {
   display: flex;
   flex-wrap: wrap;
@@ -349,7 +349,7 @@ button {
 
 .featured-project img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 15px;
   height: auto;
 }
 
@@ -453,13 +453,22 @@ button {
 
 #projects-page h2 {
   margin: 0;
-  padding: 0;
+  padding-top: 20px;
 }
 
 .projects-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 10px 0 20px 0;
+}
+
+.divider {
+  width: 90%;
+  height: 0px;
+  margin: 0;
+  padding: 0;
+  border-bottom: 2px solid #E9B14C;
 }
 
 .project {
@@ -468,15 +477,26 @@ button {
   justify-content: flex-start;
   text-align: center;
   width: 50%;
+  padding-bottom: 10px;
 }
 
 .project h3 {
   margin: 0;
+  padding: 10px 0 5px 0;
+}
+
+.project .content-container { 
+  margin: 0 20px;
 }
 
 .project img {
   width: 90%;
   height: auto;
+  border-radius: 15px;
+}
+
+.project p {
+  padding-top: 10px;
 }
 
 bold {
