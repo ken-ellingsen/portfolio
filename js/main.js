@@ -1,3 +1,4 @@
+//Header menu dropdown
 const dropdown = document.querySelector(".dropdown");
 const dropdownContent = document.querySelector(".dropdown-content")
 
@@ -14,3 +15,10 @@ window.onclick = function (e) {
         }
     }
 }
+
+//Clear contact form
+window.onbeforeunload = () => {
+    for(const form of document.getElementsByTagName('form')) {
+      form.reset();
+    }
+  }
