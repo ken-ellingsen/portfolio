@@ -128,11 +128,13 @@ h1 {
 h2 {
   margin: 20px 0;
   height: min-content;
+  font-size: 1.6em;
 }
 
 h3 {
   margin: 0 0 20px 0;
-  font-weight: 150;
+  font-weight: 510;
+  font-size: 1.2em;
 }
 
 h4 {
@@ -324,6 +326,14 @@ button {
 
 
 /*************** Home Page Styles ***************/
+main p {
+  font-size: 1.2em;
+}
+
+main li {
+  font-size: 1.1em;
+}
+
 #home-page {
   display: flex;
   flex-wrap: wrap;
@@ -401,7 +411,7 @@ button {
 #skills {
   background: #CAC691;
   width: 50%;
-  border-radius: 20px 20px 0 0;
+  border-radius: 30px 30px 0 0;
 }
 
 #about h2,
@@ -417,7 +427,7 @@ button {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  border-right: 1px solid whitesmoke;
+  border-right: 2px solid whitesmoke;
 }
 
 #about div {
@@ -425,7 +435,7 @@ button {
 }
 
 #about p {
-  padding: 5px 75px;
+  padding: 0 90px 20px 90px;
   margin: 0;
 }
 
@@ -433,7 +443,7 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  border-left: 1px solid whitesmoke;
+  border-left: 2px solid whitesmoke;
 }
 
 .skills-list {
@@ -455,7 +465,7 @@ button {
   align-items: center;
   justify-content: center;
   width: 30%;
-  margin: 20px 0;
+  margin: 25px 0;
 }
 
 .skills-list ul li i {
