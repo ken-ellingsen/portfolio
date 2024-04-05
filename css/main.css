@@ -90,7 +90,6 @@ textarea {
 /*************** Global Syles ***************/
 * {
   box-sizing: border-box;
-  /* border: 1px dotted red; */
 }
 
 html {
@@ -147,7 +146,7 @@ p {
   margin: 0;
 }
 
-bold {
+span {
   font-weight: bold;
 }
 
