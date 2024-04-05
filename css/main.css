@@ -90,7 +90,7 @@ textarea {
 /*************** Global Syles ***************/
 * {
   box-sizing: border-box;
-  border: 1px dotted red;
+  /* border: 1px dotted red; */
 }
 
 html {
@@ -362,6 +362,14 @@ footer h2{
   margin-bottom: 2px;
 }
 
+#about .content-container, #skills .content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
 #about h2, #skills h2 {
   width: 80%;
   border-bottom: 2px solid #152A3E;
@@ -371,6 +379,7 @@ footer h2{
 
 #about p {
   padding-bottom: 10px;
+  width: 100%;
 }
 
 #skills {
@@ -387,12 +396,12 @@ footer h2{
   width: 100%;
 }
 
-.skills-list ul {
+.skills-list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.skills-list ul li {
+.skills-list li {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -401,7 +410,7 @@ footer h2{
   width: 33.33%;
 }
 
-.skills-list ul li i {
+.skills-list li i {
   font-size: 40px;
   height: auto;
   color:#152A3E;
@@ -775,6 +784,11 @@ section .repo-data {
     margin: 0;
   }
 
+  footer h2, footer h4 {
+    width: 90%;
+    text-align: center;
+  }
+
   .socials ul li i {
     font-size: 80px;
   }
@@ -795,6 +809,8 @@ section .repo-data {
   .contact-form form button {
     width: 50%;
   }
+
+
 }
 
 /******************** Desktop Styling ********************/
@@ -856,8 +872,8 @@ section .repo-data {
     padding: 20px 75px;
   }
 
-  #about div {
-    /* height: 100%; */
+  #about .content-container {
+    justify-content: space-between;
   }
 
   #skills {
@@ -865,13 +881,12 @@ section .repo-data {
     padding: 20px;
   }
 
-  #skills nav ul li i {
-    font-size: 50px;
+  .skills-list {
+    height: 100%;
   }
 
-  footer h2, footer h4 {
-    width: 90%;
-    text-align: center;
+  #skills .skills-list li i {
+    font-size: 50px;
   }
 
   .footer-container{
