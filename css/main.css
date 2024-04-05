@@ -784,6 +784,10 @@ section .repo-data {
     margin: 0;
   }
 
+  header h1, header h3 {
+    width: 100%;    
+  }
+
   footer h2, footer h4 {
     width: 90%;
     text-align: center;
@@ -810,7 +814,6 @@ section .repo-data {
     width: 50%;
   }
 
-
 }
 
 /******************** Desktop Styling ********************/
@@ -820,12 +823,8 @@ section .repo-data {
   }
   
   header img {
-    width: 8%;
+    width: 9%;
     margin: 30px 20px;
-  }
-
-  header h1, header h3 {
-    width: 100%;    
   }
 
   #featured-projects {
