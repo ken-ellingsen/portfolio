@@ -188,21 +188,23 @@ header img {
 
 .navbar .nav-item {
   text-align: center;
-  width: 25%;
+  width: 20%;
   color: whitesmoke;
   padding: 10px 0;
   text-transform: uppercase;
   font-weight: bold;
+  font-size: 0.8em;
 }
 
 .dropdown-content {
   position: absolute;
   background-color: #f9f9f9;
-  margin-left: 25%;
-  margin-top: 47px;
-  width: 25%;
+  margin-left: 20%;
+  margin-top: 38px;
+  width: 20%;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  font-size: 0.8em;
 }
 
 .dropdown-content a {
@@ -726,7 +728,7 @@ section .repo-data {
 /******************** Tablet Styling ********************/
 @media all and (min-width: 768px) {
   body {
-    font-size: 1.1em;
+    font-size: 1.1rem;
   }
   
   header {
@@ -751,6 +753,14 @@ section .repo-data {
 
   header h1, header h3 {
     width: 100%;    
+  }
+
+  .navbar .nav-item {
+    font-size: 0.9em;
+  }
+
+  .dropdown-content {
+    margin-top: 43px;
   }
 
   footer h2, footer h4 {
@@ -778,7 +788,6 @@ section .repo-data {
   .contact-form form button {
     width: 50%;
   }
-
 
   #projects-page section {
     width: 85%;
@@ -810,12 +819,20 @@ section .repo-data {
 /******************** Desktop Styling ********************/
 @media all and (min-width: 1200px) {
   body {
-    font-size: 1.2em;
+    font-size: 1.2rem;
   }
   
   header img {
     width: 9%;
     margin: 30px 20px;
+  }
+
+  .navbar .nav-item {
+    font-size: 1em;
+  }
+
+  .dropdown-content {
+    margin-top: 48px;
   }
 
   #featured-projects {
