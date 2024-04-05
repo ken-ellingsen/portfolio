@@ -33,74 +33,66 @@
 
 <body>
   <header> <!-- Header starts -->
-    <div class="header-container">
-      <div class="header-info">
-        <img src="img/header-image.jpg" alt="Ken Ellingsen">
-        <div class="name-title">
-          <h1>Ken Ellingsen</h1>
-          <h3>Front End Developer</h3>
-        </div>
+    <div class="header-info">
+      <img src="img/header-image.jpg" alt="Ken Ellingsen">
+      <div class="name-title">
+        <h1>Ken Ellingsen</h1>
+        <h3>Front End Developer</h3>
       </div>
-      <div class="navbar">
-        <a href="#" class="nav-item">Home</a>
-        <a href="projects/index.html" class="nav-item dropdown">Projects</a>
-        <div class="dropdown-content hide">
-          <a href="projects/index.html#react-projects">React</a>
-          <a href="projects/index.html#javascript-projects">JavaScript</a>
-          <a href="projects/index.html#html-css-projects">HTML/CSS</a>
-          <a href="repo-gallery/index.html">Repo Gallery</a>
-        </div>
-        <a href="#about" class="nav-item">About</a>
-        <a href="#contact" class="nav-item">Contact</a>
+    </div>
+    <div class="navbar">
+      <a href="#" class="nav-item">Home</a>
+      <a href="projects/index.html" class="nav-item dropdown">Projects</a>
+      <div class="dropdown-content hide">
+        <a href="projects/index.html#react-projects">React</a>
+        <a href="projects/index.html#javascript-projects">JavaScript</a>
+        <a href="projects/index.html#html-css-projects">HTML/CSS</a>
+        <a href="repo-gallery/index.html">Repo Gallery</a>
       </div>
+      <a href="#about" class="nav-item">About</a>
+      <a href="#contact" class="nav-item">Contact</a>
     </div>
   </header>
 
-  <main id="home-page"> <!-- Main content starts -->
+  <main id="home-page">
     <section id="featured-projects">
       <h2>Featured Projects</h2>
       <div class="featured-projects-container">
         <div class="featured-project">
           <h3>Sticky Note UI</h3>
-          <div class="content-container">
-            <a href="https://wl85y4.csb.app/" target="_blank"><img src="img/sticky-note-ui.png"
-                alt="Sticky Note UI screenshot"></a>
-            <p>An app built using React to add, remove, and edit sticky notes while taking advantage of the
-              browser's local storage to save the notes. Built as a greenfield project, this app displays the use of
-              managed component trees, data flow, and interactivity through the development process from the ground up.
-              The interactivity of the add, removal, and editing showcases the use of various event listeners passing
-              props between modules to achieve their functionality.</p>
-            <p>
-              <bold>Skills:</bold> ES6, JSX, Managing data flow, Manipulating the DOM
-            </p>
-          </div>
+          <a href="https://wl85y4.csb.app/" target="_blank"><img src="img/sticky-note-ui.png"
+              alt="Sticky Note UI screenshot"></a>
+          <p>An app built using React to add, remove, and edit sticky notes while taking advantage of the
+            browser's local storage to save the notes. Built as a greenfield project, this app displays the use of
+            managed component trees, data flow, and interactivity through the development process from the ground up.
+            The interactivity of the add, removal, and editing showcases the use of various event listeners passing
+            props between modules to achieve their functionality.</p>
+          <p class="project-skills">
+            <bold>Skills:</bold> ES6, JSX, Managing data flow, Manipulating the DOM
+          </p>
         </div>
         <div id="center-project" class="featured-project">
           <h3>Guess the Word Game</h3>
-          <div class="content-container">
-            <a href="https://ken-ellingsen.github.io/guess-the-word-game/" target="_blank"><img
-                src="img/guess-the-word-game.png" alt="Guess the Word Game screenshot"></a>
-            <p>A web app built using HTML5, CSS3, JavaScript, and an API to source random words. In this game players
-              guess the word by entering one letter at a time. If the player guesses all the letters correctly before
-              they
-              use up their allotted guesses, they win!</p>
-            <p>
-              <bold>Skills:</bold> Manipulating the DOM, Vanilla JavaScript
-            </p>
-          </div>
+          <a href="https://ken-ellingsen.github.io/guess-the-word-game/" target="_blank"><img
+              src="img/guess-the-word-game.png" alt="Guess the Word Game screenshot"></a>
+          <p>A web app built using HTML5, CSS3, JavaScript, and an API to source random words. In this game players
+            guess the word by entering one letter at a time. If the player guesses all the letters correctly before
+            they
+            use up their allotted guesses, they win!</p>
+          <p class="project-skills">
+            <bold>Skills:</bold> Manipulating the DOM, Vanilla JavaScript
+          </p>
         </div>
         <div class="featured-project">
           <h3>Name Tag Generator</h3>
-          <div class="content-container">
-            <a href="https://kj93ld.csb.app/" target="_blank"><img src="img/name-tag-generator.png"
-                alt="Hotel Booking UI screenshot"></a>
-            <p>A name tag generation app built using React. Key features are the ability to create new name tags using
-              stateful components, change events, and click events. The latest version makes use of lifecycle methods to
-              save the nametags using local storage.</p>
-            <p>
-              <bold>Skills:</bold> ES6, JSX, Managing data flow
-            </p>
-          </div>
+          <a href="https://kj93ld.csb.app/" target="_blank"><img src="img/name-tag-generator.png"
+              alt="Hotel Booking UI screenshot"></a>
+          <p>A name tag generation app built using React. Key features are the ability to create new name tags using
+            stateful components, change events, and click events. The latest version makes use of lifecycle methods to
+            save the nametags using local storage.</p>
+          <p class="project-skills">
+            <bold>Skills:</bold> ES6, JSX, Managing data flow
+          </p>
         </div>
       </div>
     </section>
@@ -110,7 +102,8 @@
       <div>
         <p>Hey there! I’m Ken Ellingsen, a front end web developer that builds responsive, accessible, and easy to use
           websites.</p>
-        <p>I’ve always had an interest in figuring out how the things around me work, which is how I ended up getting my B.S.
+        <p>I’ve always had an interest in figuring out how the things around me work, which is how I ended up getting my
+          B.S.
           in Physics. After exploring some of my other passions as an event planner, settling down and diving into
           development felt like one of the
           best ways to see how the things I use online almost every day are put together. While my skills primarily
@@ -120,7 +113,7 @@
           skill set with the backend development tools and knowledge to become a well rounded full stack developer.</p>
         <p>When I'm not at my desk or watching a movie you can usually find me enjoying the outdoors
           while I'm hiking,
-          backpacking, skiing, or cycling. On the side I'm also an amateur wood worker, bike mechanic, mead maker, and
+          backpacking, skiing, or cycling. On the side I also dabble as an amateur wood worker, bike mechanic, mead maker, and
           photographer.
         </p>
         <p>I hope we can connect soon!</p>
@@ -149,7 +142,7 @@
   </main>
 
 
-  <footer id="contact"> <!-- Footer starts -->
+  <footer id="contact">
     <h2>Reach out if you'd like to connect!</h2>
     <div class="footer-container">
       <nav class="socials">

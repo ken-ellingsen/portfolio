@@ -90,11 +90,11 @@ textarea {
 /*************** Global Syles ***************/
 * {
   box-sizing: border-box;
-  /* border: 1px dotted red; */
+  border: 1px dotted red;
 }
 
 html {
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 body {
@@ -126,19 +126,19 @@ h1 {
 }
 
 h2 {
-  margin: 20px 0;
+  margin: 0;
   height: min-content;
   font-size: 1.6em;
 }
 
 h3 {
-  margin: 0 0 20px 0;
+  margin: 0;
   font-weight: 510;
   font-size: 1.2em;
 }
 
 h4 {
-  margin: 10px 0 5px 0;
+  margin: 0;
   font-weight: 100;
 }
 
@@ -150,62 +150,46 @@ p {
 /*************** Header Styles ***************/
 header {
   display: flex;
-  background-color: #152A3E;
-}
-
-header .header-container {
-  display: flex;
-  flex-direction: flex-start;
   flex-wrap: wrap;
-  align-items: center;
-  width: 100%;
+  justify-content: center;
+  background-color: #152A3E;
+  color: whitesmoke;
 }
 
 .header-info {
   display: flex;
-  align-items: center;
-  margin: 20px 0;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 header img {
-  max-width: 8%;
+  width: 40%;
   height: auto;
   border-radius: 50%;
-  margin: 5px 20px;
+  margin: 20px 0;
 }
 
-header .name-title {
-  width: 50%;
+.name-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
-header h1,
-header h3 {
+.navbar {
   display: flex;
   width: 100%;
-  color: whitesmoke;
-}
-
-header h1 {
-  margin: 30px 0 0 0;
-}
-
-header h3 {
-  margin: 0 0 30px 0;
-}
-
-header .navbar {
-  display: flex;
-  width: 100%;
-  background: #262626;
+  background-color: #222;
 }
 
 .navbar .nav-item {
+  text-align: center;
+  width: 25%;
+  color: whitesmoke;
+  padding: 10px 0;
   text-transform: uppercase;
   font-weight: bold;
-  text-align: center;
-  color: whitesmoke;
-  width: 25%;
-  padding: 10px 0;
 }
 
 .dropdown-content {
@@ -214,7 +198,7 @@ header .navbar {
   margin-left: 25%;
   margin-top: 42px;
   width: 25%;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -231,7 +215,7 @@ header .navbar {
 }
 
 .navbar .nav-item:hover {
-  background-color:#E9B14C;
+  background-color: #E9B14C;
 }
 
 .dropdown-content a:hover {
@@ -248,230 +232,180 @@ header .navbar {
 
 /*************** Footer Styles ***************/
 footer {
-  background: #152A3E;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #152A3E;
   color: whitesmoke;
-  text-align: center;
   padding: 20px 0;
 }
 
-footer h2 {
-  margin: 0 0 20px 0;
+footer h2{
+  text-align: center;
 }
 
 .footer-container {
   display: flex;
-  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.socials {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 45%;
-  padding: 0 20px;
+.footer-container .socials {
+  width: 100%;
 }
 
 .socials ul {
   display: flex;
-  align-items: center;
-  padding-right: 20px;
-  ;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 .socials ul li {
-  margin: 30px 20px 20px 20px;
+  padding: 0 30px;
 }
 
-.socials i {
-  font-size: 5em;
+.socials ul li i {
+  font-size: 60px;
   color: whitesmoke;
 }
 
-.socials i:hover {
+.socials ul li i:hover {
   color: #E9B14C;
 }
 
-.contact-form {
-  width: 55%;
+.contact-form form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
 }
 
-form {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 70%;
-  max-width: 500px;
-  padding: 10px;
-}
-
-.contact-info {
-  display: flex;
-  justify-content: space-between;
+.contact-form .contact-info {
   width: 100%;
 }
 
-input {
-  width: 45%;
+.contact-form form input {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+  border-radius: 7px;
 }
 
-textarea {
+.contact-form form textarea {
   width: 100%;
   height: 100px;
-  margin: 10px 0;
+  margin-bottom: 10px;
+  border-radius: 7px;
 }
 
-button {
-  width: 40%;
+.contact-form form button {
+  width: 60%;
+  border-radius: 7px;
 }
+
 
 
 /*************** Home Page Styles ***************/
-main p {
-  font-size: 1.2em;
-}
-
-main li {
-  font-size: 1.1em;
-}
-
 #home-page {
+  background-color: whitesmoke;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background: whitesmoke;
-}
-
-#home-page .content-container {
-  margin: 0 20px;
-}
-
-#featured-projects,
-#skills {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
 }
 
 #featured-projects {
-  flex-direction: column;
-  align-items: center;
-  background: whitesmoke;
-  width: 100%;
-  padding: 0 0 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 40px 10px 40px;
 }
 
 #featured-projects h2 {
-  margin-bottom: 10px;
-}
-
-.featured-projects-container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
+  width: 80%;
+  border-bottom: 2px solid #152A3E;
+  text-align: center;
 }
 
 .featured-project {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 33.33%;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 20px 0;
 }
 
-.featured-project .content-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .featured-project a {
-  max-width: 80%;
+  margin: 10px 0;
 }
 
 .featured-project img {
   width: 100%;
-  border-radius: 15px;
   height: auto;
-  margin-bottom: 10px;
+  border-radius: 10px;
 }
 
 .featured-project p {
+  padding-bottom: 10px;
+}
+
+.featured-project .project-skills {
   width: 100%;
-  margin: 10px 0;
-  padding: 0 50px;
-}
-
-#center-project {
-  border-left: 2px solid #E9B14C;
-  border-right: 2px solid #E9B14C;
-}
-
-#about,
-#skills {
-  background: #CAC691;
-  width: 50%;
-  border-radius: 30px 30px 0 0;
-}
-
-#about h2,
-#skills h2 {
-  text-align: center;
-  width: 70%;
-  border-bottom: 2px solid #152A3E;
-  margin-bottom: 0;
+  text-align: left;
 }
 
 #about {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  border-right: 2px solid whitesmoke;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #CAC691;
+  border-radius: 30px;
+  padding: 20px 40px;
+  margin-bottom: 2px;
 }
 
-#about div {
-  padding: 20px 0;
+#about h2, #skills h2 {
+  width: 80%;
+  border-bottom: 2px solid #152A3E;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 #about p {
-  padding: 0 90px 20px 90px;
-  margin: 0;
+  padding-bottom: 10px;
 }
 
 #skills {
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  border-left: 2px solid whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #CAC691;
+  border-radius: 30px 30px 0 0;
+  padding: 20px 20px 10px 20px;
+  width: 100%;
 }
 
-.skills-list {
-  display: flex;
-  justify-content: center;
+#skills .skills-list {
   width: 100%;
 }
 
 .skills-list ul {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 20px;
 }
 
 .skills-list ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 30%;
-  margin: 25px 0;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 33.33%;
 }
 
 .skills-list ul li i {
-  font-size: 3em;
-  color: #152A3E;
-  padding-bottom: 5px;
+  font-size: 40px;
+  height: auto;
+  color:#152A3E;
+  margin-bottom: 10px;
 }
 
 /*************** Projects Page Styles ***************/
@@ -526,7 +460,7 @@ main li {
   padding: 10px 0;
 }
 
-.project .content-container { 
+.project .content-container {
   margin: 0 20px;
 }
 
@@ -619,7 +553,7 @@ section .repo-data {
   padding: 10px 30px 30px 30px;
 }
 
-.repos input{
+.repos input {
   width: 40%;
   margin-bottom: 20px;
 }
@@ -813,6 +747,161 @@ section .repo-data {
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
+}
+
+/******************** Tablet Styling ********************/
+@media all and (min-width: 768px) {
+  body {
+    font-size: 1.1em;
+  }
+  
+  header {
+    justify-content: flex-start;
+  }
+
+  .header-info {
+    justify-content: flex-start;
+  }
+
+  header img {
+    width: 15%;
+    margin: 20px 15px;
+  }
+
+  .name-title {
+    width: 50%;
+    justify-content: flex-start;
+    align-content: center;
+    margin: 0;
+  }
+
+  .socials ul li i {
+    font-size: 80px;
+  }
+
+  .contact-form {
+    width: 80%;
+  }
+
+  .contact-form .contact-info{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact-form form input {
+    width: 48%;
+  }
+
+  .contact-form form button {
+    width: 50%;
+  }
+}
+
+/******************** Desktop Styling ********************/
+@media all and (min-width: 1200px) {
+  body {
+    font-size: 1.2em;
+  }
+  
+  header img {
+    width: 8%;
+    margin: 30px 20px;
+  }
+
+  header h1, header h3 {
+    width: 100%;    
+  }
+
+  #featured-projects {
+    padding: 20px 0 20px 0;
+  }
+
+  #featured-projects h2 {
+    border-bottom: none;
+  }
+
+  .featured-projects-container {
+    display: flex;
+  }
+
+  .featured-project {
+    width: 33.33%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px 0;
+    padding: 10px 75px;
+  }
+
+  .featured-project a {
+    width: 90%;
+  }
+
+  #center-project {
+    border-left: 2px solid #E9B14C;
+    border-right: 2px solid #E9B14C;
+  }
+
+  #about, #skills {
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  #about {
+    border-radius: 30px 30px 0 0;
+    border-right: 2px solid whitesmoke;
+    margin: 0;
+    padding: 20px 75px;
+  }
+
+  #about div {
+    /* height: 100%; */
+  }
+
+  #skills {
+    border-left: 2px solid whitesmoke;
+    padding: 20px;
+  }
+
+  #skills nav ul li i {
+    font-size: 50px;
+  }
+
+  footer h2, footer h4 {
+    width: 90%;
+    text-align: center;
+  }
+
+  .footer-container{
+    width: 100%;
+  }
+
+  .footer-container .socials {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 40%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .socials ul {
+    margin: 0;
+  }
+
+  .socials ul li i {
+    font-size: 120px;
+  }
+
+  .footer-container .contact-form {
+    width: 60%;
+  }
+
+  .contact-form form {
+    width: 60%;
+  }
 }
 
 @media print,
