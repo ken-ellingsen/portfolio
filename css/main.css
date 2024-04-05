@@ -147,6 +147,10 @@ p {
   margin: 0;
 }
 
+bold {
+  font-weight: bold;
+}
+
 /*************** Header Styles ***************/
 header {
   display: flex;
@@ -196,7 +200,7 @@ header img {
   position: absolute;
   background-color: #f9f9f9;
   margin-left: 25%;
-  margin-top: 42px;
+  margin-top: 47px;
   width: 25%;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -421,71 +425,60 @@ footer h2{
 #projects-page {
   background-color: #EEEFDA;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
 }
 
 #projects-page section {
-  width: 80%;
-  max-width: 1200px;
   background-color: whitesmoke;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#projects-page h2 {
-  margin: 0;
-  padding-top: 20px;
-}
-
-.projects-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 10px 0;
+  padding: 30px 30px 0 30px;
 }
 
-.divider {
-  width: 90%;
-  height: 0px;
-  margin: 0;
-  padding: 0;
-  border-bottom: 2px solid #E9B14C;
+#projects-page section .projects-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.project {
+.projects-container .project {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  text-align: center;
-  width: 50%;
-  padding-bottom: 10px;
-}
-
-.project h3 {
-  margin: 0;
-  padding: 10px 0;
+  align-items: center;
+  padding-top: 30px;
 }
 
 .project .content-container {
-  margin: 0 20px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.project a {
+  width: 90%;
+  height: auto;
 }
 
 .project img {
   width: 90%;
   height: auto;
-  border-radius: 15px;
-  padding-bottom: 20px;
 }
 
 .project p {
-  padding-bottom: 20px;
+  padding-top: 10px;
 }
 
-bold {
-  font-weight: bold;
+.divider {
+  height: 0;
+  width: 100%;
+  border-bottom: 2px solid #E9B14C;
+  margin-bottom: 30px;
+}
+
+#projects-page #html-css-projects {
+  padding-bottom: 40px;
 }
 
 /*************** Repo Gallery Page Styles ***************/
@@ -542,8 +535,8 @@ bold {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  width: 80%;
-  max-width: 1200px;
+  width: 100%;
+  /* max-width: 1200px; */
 }
 
 section .repo-data {
@@ -637,33 +630,6 @@ section .repo-data {
   max-width: 200px;
   margin-top: 0;
   background-color: white;
-}
-
-@media (min-width: 700px) {
-  .user-info div {
-    width: 45%;
-    text-align: left;
-  }
-
-  .repo-list {
-    justify-content: space-between;
-  }
-
-  .repo-list li {
-    width: 48%;
-  }
-}
-
-@media (max-width: 700px) {
-  .user-info div p {
-    margin: 10px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .repo-list li {
-    width: 30%;
-  }
 }
 
 /* ==========================================================================
@@ -814,6 +780,32 @@ section .repo-data {
     width: 50%;
   }
 
+
+  #projects-page section {
+    width: 85%;
+    padding: 30px 50px 0 50px;
+  }
+
+  #projects-page .project p {
+    padding-top: 20px;
+  }
+
+  .repo-container {
+    width: 85%;
+  }
+
+  .user-info div {
+    width: 45%;
+    text-align: left;
+  }
+
+  .repo-list {
+    justify-content: space-between;
+  }
+
+  .repo-list li {
+    width: 48%;
+  }
 }
 
 /******************** Desktop Styling ********************/
@@ -915,6 +907,23 @@ section .repo-data {
 
   .contact-form form {
     width: 60%;
+  }
+
+  #projects-page .project {
+    width: 50%;
+    padding: 30px;
+  }
+
+  .project .content-container {
+    padding-top: 20px;
+  }
+
+  .divider {
+    margin-bottom: 50px;
+  }
+
+  .repo-list li {
+    width: 30%;
   }
 }
 
