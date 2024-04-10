@@ -180,6 +180,11 @@ header img {
   margin-bottom: 20px;
 }
 
+.name-title h1, .name-title h3 {
+  text-align: center;
+  width: 75%;
+}
+
 .navbar {
   display: flex;
   width: 100%;
@@ -363,7 +368,7 @@ footer h2{
   justify-content: center;
   background-color: #CAC691;
   border-radius: 30px;
-  padding: 20px 40px;
+  padding: 40px 40px;
   margin-bottom: 2px;
 }
 
@@ -393,7 +398,7 @@ footer h2{
   justify-content: center;
   background-color: #CAC691;
   border-radius: 30px 30px 0 0;
-  padding: 20px 20px 10px 20px;
+  padding: 40px 20px 20px 20px;
   width: 100%;
 }
 
@@ -404,6 +409,7 @@ footer h2{
 .skills-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .skills-list li {
@@ -411,8 +417,8 @@ footer h2{
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 20px;
-  width: 33.33%;
+  margin-bottom: 30px;
+  width: 50%;
 }
 
 .skills-list li i {
@@ -757,10 +763,6 @@ section .repo-data {
     margin: 0;
   }
 
-  header h1, header h3 {
-    width: 100%;    
-  }
-
   .navbar .nav-item {
     font-size: 0.9em;
   }
@@ -793,6 +795,10 @@ section .repo-data {
 
   .contact-form form button {
     width: 50%;
+  }
+
+  .skills-list li {
+    width: 33.33%
   }
 
   #projects-page section {
@@ -831,6 +837,10 @@ section .repo-data {
   header img {
     width: 9%;
     margin: 30px 20px;
+  }
+
+  .name-title h1, .name-title h3 {
+    text-align: left;
   }
 
   .navbar .nav-item {
@@ -882,20 +892,27 @@ section .repo-data {
     border-radius: 30px 30px 0 0;
     border-right: 2px solid whitesmoke;
     margin: 0;
-    padding: 20px 75px;
+    padding: 75px 100px 100px 100px;
   }
 
   #about .content-container {
     justify-content: space-between;
+    padding-bottom: 100px;
+  }
+
+  #about p {
+    padding: 20px 0;
+    line-height: 1.7em;
   }
 
   #skills {
     border-left: 2px solid whitesmoke;
-    padding: 20px;
+    padding: 75px 20px 100px 20px;
   }
 
   .skills-list {
     height: 100%;
+    padding-top: 15px;
   }
 
   #skills .skills-list li i {
