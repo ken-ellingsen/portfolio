@@ -725,6 +725,12 @@ section .repo-data {
   /* Style adjustments for viewports that meet the condition */
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  html {
+      scroll-behavior: smooth;  
+  }
+}
+
 /******************** Tablet Styling ********************/
 @media all and (min-width: 768px) {
   body {
