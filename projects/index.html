@@ -33,27 +33,25 @@
 
 <body>
   <header> <!-- Header starts -->
-    <div class="content-wrapper">
-      <div class="header-info">
-        <img src="../img/header-image.jpg" alt="Ken Ellingsen">
-        <div class="name-title">
-          <h1>Ken Ellingsen</h1>
-          <h3>Front End Developer</h3>
-        </div>
+    <div class="header-info">
+      <img src="../img/header-image.jpg" alt="Ken Ellingsen">
+      <div class="name-title">
+        <h1>Ken Ellingsen</h1>
+        <h3>Front End Developer</h3>
       </div>
-      <div class="navbar">
-        <a href="../index.html" class="nav-item">Home</a>
-        <a href="#" class="nav-item dropdown">Projects</a>
-        <div class="dropdown-content hide">
-          <a href="../projects/index.html#react-projects">React</a>
-          <a href="../projects/index.html#javascript-projects">JavaScript</a>
-          <a href="../projects/index.html#html-css-projects">HTML/CSS</a>
-          <a href="../repo-gallery/index.html">Repo Gallery</a>
-        </div>
-        <a href="../index.html#about" class="nav-item">About</a>
-        <a href="../index.html#skills" class="nav-item">Skills</a>
-        <a href="#contact" class="nav-item">Contact</a>
+    </div>
+    <div class="navbar">
+      <a href="../index.html" class="nav-item">Home</a>
+      <a href="#" class="nav-item dropdown">Projects</a>
+      <div class="dropdown-content hide">
+        <a href="../projects/index.html#react-projects">React</a>
+        <a href="../projects/index.html#javascript-projects">JavaScript</a>
+        <a href="../projects/index.html#html-css-projects">HTML/CSS</a>
+        <a href="../repo-gallery/index.html">Repo Gallery</a>
       </div>
+      <a href="../index.html#about" class="nav-item">About</a>
+      <a href="../index.html#skills" class="nav-item">Skills</a>
+      <a href="#contact" class="nav-item">Contact</a>
     </div>
   </header>
 
@@ -62,21 +60,31 @@
       <h2>React Projects</h2>
       <div class="projects-container">
         <div class="project">
-          <h3>Hotel Booking UI</h3>
+          <h3>Name Tag Generator</h3>
           <div class="content-container">
-            <a href="https://xwf5tx.csb.app/" target="_blank"><img src="../img/hotel-booking-ui.png" alt="Hotel Booking UI screenshot"></a>
-            <p>A sample hotel booking app built using React. Modified from from a previous version to take advantage of
-              the use of stateful React components, this app showcases the ability to toggle different filter options to
-              find hotels matching the selected criteria.</p>
+            <a href="https://kj93ld.csb.app/" target="_blank">
+              <img src="../img/name-tag-generator.png" alt="Name Tag Generator screenshot">
+              <div class="middle">
+                <div class="text">Click to see the live site!</div>
+              </div>
+            </a>
+            <p>A name tag generation app built using React. Key features are the ability to create new name tags using
+              stateful components, change events, and click events. The latest version makes use of lifecycle methods to
+              save the nametags using local storage.</p>
             <p>
-              <span>Skills:</span> ES6, JSX, Managing data flow, Manipulating the DOM
+              <span>Skills:</span> ES6, JSX, Managing data flow
             </p>
           </div>
         </div>
         <div class="project">
-          <h3>Sticky Note UI</h3>
+          <h3>Sticky Note App</h3>
           <div class="content-container">
-            <a href="https://wl85y4.csb.app/" target="_blank"><img src="../img/sticky-note-ui.png" alt="Sticky Note UI screenshot"></a>
+            <a href="https://wl85y4.csb.app/" target="_blank"><img src="../img/sticky-note-ui.png"
+                alt="Sticky Note UI screenshot">
+              <div class="middle">
+                <div class="text">Click to see the live site!</div>
+              </div>
+            </a>
             <p>An app built using React to add, remove, and edit sticky notes while taking advantage of the browser's
               local storage to save the notes. Built as a greenfield project, this app displays the use of managed
               component trees, data flow, and interactivity through the development process from the ground up. The
@@ -84,18 +92,6 @@
               between modules to achieve their functionality.</p>
             <p>
               <span>Skills:</span> ES6, JSX, Managing data flow, Manipulating the DOM
-            </p>
-          </div>
-        </div>
-        <div class="project">
-          <h3>Name Tag Generator</h3>
-          <div class="content-container">
-            <a href="https://kj93ld.csb.app/" target="_blank"><img src="../img/name-tag-generator.png" alt="Name Tag Generator screenshot"></a>
-            <p>A name tag generation app built using React. Key features are the ability to create new name tags using
-              stateful components, change events, and click events. The latest version makes use of lifecycle methods to
-              save the nametags using local storage.</p>
-            <p>
-              <span>Skills:</span> ES6, JSX, Managing data flow
             </p>
           </div>
         </div>
@@ -107,29 +103,37 @@
       <h2>JavaScript Projects</h2>
       <div class="projects-container">
         <div class="project">
-          <h3>Guess the Word Game</h3>
-          <div class="content-container">
-            <a href="https://ken-ellingsen.github.io/guess-the-word-game/" target="_blank"><img
-                src="../img/guess-the-word-game.png" alt="Guess the Word Game screenshot"></a>
-            <p>A web app built using HTML5, CSS3, JavaScript, and an API to source random words. In this game players
-              guess the word by entering one letter at a time. If the player guesses all the letters correctly before
-              they use up their allotted guesses, they win!</p>
-            <p>
-              <span>Skills:</span> Manipulating the DOM, Vanilla JavaScript
-            </p>
-          </div>
-        </div>
-        <div class="project">
           <h3>GitHub Repo Gallery</h3>
           <div class="content-container">
             <a href="https://ken-ellingsen.github.io/github-repo-gallery/" target="_blank"><img
-                src="../img/github-repo-gallery.png" alt="Github Repo Gallery screenshot"></a>
+                src="../img/github-repo-gallery.png" alt="Github Repo Gallery screenshot">
+              <div class="middle">
+                <div class="text">Click to see the live site!</div>
+              </div>
+            </a>
             <p>A webpage built using HTML5, CSS3, and JavaScript accessing the GitHub REST API in order to cleanly
               display all of my repos hosted on GitHub in one searchable location. Clicking on each repo name will
               display the repo's details including the description, languages used, and a link to the repository itself.
             </p>
             <p>
               <span>Skills:</span> Manipulating the DOM, APIs, Vanilla JavaScript
+            </p>
+          </div>
+        </div>
+        <div class="project">
+          <h3>Guess the Word Game</h3>
+          <div class="content-container">
+            <a href="https://ken-ellingsen.github.io/guess-the-word-game/" target="_blank"><img
+                src="../img/guess-the-word-game.png" alt="Guess the Word Game screenshot">
+              <div class="middle">
+                <div class="text">Click to see the live site!</div>
+              </div>
+            </a>
+            <p>A web app built using HTML5, CSS3, JavaScript, and an API to source random words. In this game players
+              guess the word by entering one letter at a time. If the player guesses all the letters correctly before
+              they use up their allotted guesses, they win!</p>
+            <p>
+              <span>Skills:</span> Manipulating the DOM, Vanilla JavaScript
             </p>
           </div>
         </div>
@@ -144,7 +148,11 @@
           <h3>Rogue Pickings</h3>
           <div class="content-container">
             <a href="https://ken-ellingsen.github.io/responsive-rogue-pickings/" target="_blank"><img
-                src="../img/rogue-pickings.png" alt="Rogue Pickings website screenshot"></a>
+                src="../img/rogue-pickings.png" alt="Rogue Pickings website screenshot">
+              <div class="middle">
+                <div class="text">Click to see the live site!</div>
+              </div>
+            </a>
             <p>A sample webpage built for a fictional food delivery truck. This page uses responsive design elements
               allowing it to be optimally viewed across all devices and screen sizes.</p>
             <p>
@@ -155,23 +163,17 @@
         <div class="project">
           <h3>Unplugged</h3>
           <div class="content-container">
-            <a href="https://ken-ellingsen.github.io/unplugged/" target="_blank"><img src="../img/unplugged.png" alt="Unplugged website screenshot"></a>
+            <a href="https://ken-ellingsen.github.io/unplugged/" target="_blank"><img src="../img/unplugged.png"
+                alt="Unplugged website screenshot">
+              <div class="middle">
+                <div class="text">Click to see the live site!</div>
+              </div>
+            </a>
             <p>A sample multipage website built for a fictional company retreat service. This website features
               responsive design allowing it to be viewd optimally across all devices and screen sizes. Additional
               features include the use of icon fonts through Font Awesome and an embedded map using iFrames.</p>
             <p>
               <span>Skills:</span> CSS3, Flexbox, HTML5, Media Queries, Responsive Typography
-            </p>
-          </div>
-        </div>
-        <div class="project">
-          <h3>Recipe Card</h3>
-          <div class="content-container">
-            <a href="https://ken-ellingsen.github.io/recipe-cards/" target="_blank"><img
-                src="../img/recipe-cards.png" alt="Recipe Card website screenshot"></a>
-            <p>A webpage built to display mulitple recipe cards using basic CSS3 and HTML5 techniques.</p>
-            <p>
-              <span>Skills:</span> CSS3, HTML5
             </p>
           </div>
         </div>
@@ -184,9 +186,10 @@
     <div class="footer-container">
       <nav class="socials">
         <ul>
-          <li><a href="https://www.linkedin.com/in/ken-ellingsen-a6220ba3/"  target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <li><a href="https://www.linkedin.com/in/ken-ellingsen-a6220ba3/" target="_blank"><i
+                class="fa-brands fa-linkedin"></i></a>
           </li>
-          <li><a href="https://github.com/ken-ellingsen"  target="_blank"><i class="fa-brands fa-github"></i></a></li>
+          <li><a href="https://github.com/ken-ellingsen" target="_blank"><i class="fa-brands fa-github"></i></a></li>
         </ul>
       </nav>
       <div class="contact-form">

@@ -90,6 +90,7 @@ textarea {
 /*************** Global Syles ***************/
 * {
   box-sizing: border-box;
+  /* border: 1px dotted red; */
 }
 
 html {
@@ -436,6 +437,7 @@ footer h2{
   justify-content: center;
 }
 
+
 #projects-page section {
   background-color: whitesmoke;
   display: flex;
@@ -464,17 +466,52 @@ footer h2{
 }
 
 .project a {
-  width: 90%;
+  width: 50%;
   height: auto;
+  position: relative;
 }
 
 .project img {
-  width: 90%;
+  width: 100%;
   height: auto;
+  border-radius: 10px;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.project .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+a:hover img {
+  opacity: 0.3;
+}
+
+a:hover .middle {
+  opacity: 1;
+}
+
+.project .text {
+  background-color: #152A3E;
+  color: whitesmoke;
+  font-size: 0.9em;
+  padding: 1em 2em;
+  border-radius: 10px;
 }
 
 .project p {
   padding-top: 10px;
+  text-align: left;
 }
 
 .divider {
@@ -873,8 +910,41 @@ section .repo-data {
   }
 
   .featured-project a {
-    width: 90%;
+    width: 100%;
+    height: auto;
+    position: relative;
   }
+
+  .featured-project img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  .featured-project .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.featured-project .text {
+  background-color: #152A3E;
+  color: whitesmoke;
+  font-size: 0.8em;
+  padding: 1em 2em;
+  border-radius: 10px;
+  text-align: center;
+}
 
   #center-project {
     border-left: 2px solid #E9B14C;
