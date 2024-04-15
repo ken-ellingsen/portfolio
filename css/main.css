@@ -90,11 +90,11 @@ textarea {
 /*************** Global Syles ***************/
 * {
   box-sizing: border-box;
-  /* border: 1px dotted red; */
 }
 
 html {
   font-size: 16px;
+  background-color: whitesmoke;
 }
 
 body {
@@ -158,6 +158,8 @@ header {
   justify-content: center;
   background-color: #152A3E;
   color: whitesmoke;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
 }
 
 .header-info {
@@ -315,8 +317,6 @@ footer h2 {
   border-radius: 7px;
 }
 
-
-
 /*************** Home Page Styles ***************/
 #home-page {
   background-color: whitesmoke;
@@ -329,7 +329,8 @@ footer h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 100px 40px 20px 40px;
+  padding: 30px 40px 20px 40px;
+  margin-bottom: 20px;
 }
 
 #featured-projects h2 {
@@ -919,7 +920,7 @@ section .repo-data {
   }
 
   .dropdown-content {
-    margin-top: 48px;
+    margin-top: 47px;
   }
 
   #featured-projects {
