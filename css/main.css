@@ -181,7 +181,8 @@ header img {
   margin-bottom: 20px;
 }
 
-.name-title h1, .name-title h3 {
+.name-title h1,
+.name-title h3 {
   text-align: center;
   width: 75%;
 }
@@ -251,7 +252,7 @@ footer {
   padding: 20px 0;
 }
 
-footer h2{
+footer h2 {
   text-align: center;
 }
 
@@ -284,7 +285,7 @@ footer h2{
   color: #E9B14C;
 }
 
-.contact-form form{
+.contact-form form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -328,7 +329,7 @@ footer h2{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 20px 40px 10px 40px;
+  padding: 100px 40px 20px 40px;
 }
 
 #featured-projects h2 {
@@ -346,16 +347,41 @@ footer h2{
 
 .featured-project a {
   margin: 10px 0;
+  height: auto;
+  position: relative;
 }
 
-.featured-project img {
+.featured-project a img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.featured-project .middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.featured-project .text {
+  background-color: #152A3E;
+  color: whitesmoke;
+  font-size: 0.9em;
+  padding: 1em 1.8em;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .featured-project p {
-  padding-bottom: 10px;
+  padding-top: 20px;
 }
 
 .featured-project .project-skills {
@@ -373,7 +399,8 @@ footer h2{
   margin-bottom: 2px;
 }
 
-#about .content-container, #skills .content-container {
+#about .content-container,
+#skills .content-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -381,7 +408,8 @@ footer h2{
   width: 100%;
 }
 
-#about h2, #skills h2 {
+#about h2,
+#skills h2 {
   width: 80%;
   border-bottom: 2px solid #152A3E;
   text-align: center;
@@ -425,7 +453,7 @@ footer h2{
 .skills-list li i {
   font-size: 40px;
   height: auto;
-  color:#152A3E;
+  color: #152A3E;
   margin-bottom: 10px;
 }
 
@@ -443,13 +471,17 @@ footer h2{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 30px 30px 0 30px;
+}
+
+#projects-page h2 {
+  padding-top: 50px;
 }
 
 #projects-page section .projects-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding-bottom: 50px;
 }
 
 .projects-container .project {
@@ -466,31 +498,31 @@ footer h2{
 }
 
 .project a {
-  width: 50%;
+  width: 100%;
   height: auto;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .project img {
-  width: 100%;
+  width: 90%;
   height: auto;
   border-radius: 10px;
   opacity: 1;
   display: block;
-  width: 100%;
-  height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
 }
 
 .project .middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 0%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%)
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
 }
 
 a:hover img {
@@ -770,7 +802,7 @@ section .repo-data {
 
 @media (prefers-reduced-motion: no-preference) {
   html {
-      scroll-behavior: smooth;  
+    scroll-behavior: smooth;
   }
 }
 
@@ -779,7 +811,7 @@ section .repo-data {
   body {
     font-size: 1.1rem;
   }
-  
+
   header {
     justify-content: flex-start;
   }
@@ -808,7 +840,8 @@ section .repo-data {
     margin-top: 43px;
   }
 
-  footer h2, footer h4 {
+  footer h2,
+  footer h4 {
     width: 90%;
     text-align: center;
   }
@@ -821,7 +854,7 @@ section .repo-data {
     width: 80%;
   }
 
-  .contact-form .contact-info{
+  .contact-form .contact-info {
     display: flex;
     justify-content: space-between;
   }
@@ -870,13 +903,14 @@ section .repo-data {
   body {
     font-size: 1.2rem;
   }
-  
+
   header img {
     width: 9%;
     margin: 30px 20px;
   }
 
-  .name-title h1, .name-title h3 {
+  .name-title h1,
+  .name-title h3 {
     text-align: left;
   }
 
@@ -889,7 +923,7 @@ section .repo-data {
   }
 
   #featured-projects {
-    padding: 20px 0 20px 0;
+    padding: 120px 0;
   }
 
   #featured-projects h2 {
@@ -911,47 +945,21 @@ section .repo-data {
 
   .featured-project a {
     width: 100%;
-    height: auto;
-    position: relative;
   }
 
   .featured-project img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
+    padding-top: 20px;
   }
-
-  .featured-project .middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%)
-}
-
-.featured-project .text {
-  background-color: #152A3E;
-  color: whitesmoke;
-  font-size: 0.8em;
-  padding: 1em 2em;
-  border-radius: 10px;
-  text-align: center;
-}
 
   #center-project {
     border-left: 2px solid #E9B14C;
     border-right: 2px solid #E9B14C;
   }
 
-  #about, #skills {
+  #about,
+  #skills {
     width: 50%;
     flex-direction: column;
     align-items: center;
@@ -989,7 +997,7 @@ section .repo-data {
     font-size: 50px;
   }
 
-  .footer-container{
+  .footer-container {
     width: 100%;
   }
 
