@@ -330,6 +330,7 @@ footer h2 {
   flex-wrap: wrap;
   justify-content: center;
   padding: 100px 40px 20px 40px;
+  background-color: blue;
 }
 
 #featured-projects h2 {
