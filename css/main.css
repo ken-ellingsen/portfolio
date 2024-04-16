@@ -499,7 +499,7 @@ footer h2 {
 }
 
 .project a {
-  width: 100%;
+  width: 90%;
   height: auto;
   position: relative;
   display: flex;
@@ -507,7 +507,7 @@ footer h2 {
 }
 
 .project img {
-  width: 90%;
+  width: 100%;
   height: auto;
   border-radius: 10px;
   opacity: 1;
@@ -951,7 +951,7 @@ section .repo-data {
   .featured-project img {
     width: 100%;
     height: auto;
-    padding-top: 20px;
+    margin-top: 20px;
   }
 
   #center-project {
