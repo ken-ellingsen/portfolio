@@ -385,9 +385,10 @@ footer h2 {
 }
 
 .featured-project .text {
-  background-color: #152A3E;
+  background-color: #E9B14C;
   color: whitesmoke;
   font-size: 0.9em;
+  font-weight: bold;
   padding: 1em;
   border-radius: 10px;
   text-align: center;
@@ -558,10 +559,12 @@ a:hover .middle {
 }
 
 .project .text {
-  background-color: #152A3E;
+  background-color: #E9B14C;
   color: whitesmoke;
   font-size: 0.9em;
-  padding: 1em;
+  font-weight: bold;
+  width: auto;
+  padding: 0.9em;
   border-radius: 10px;
   text-align: center;
 }
