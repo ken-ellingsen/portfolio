@@ -201,13 +201,22 @@
       <div class="contact-form">
         <form action="https://formspree.io/f/xbjnzqep" method="POST">
           <div class="contact-info">
-            <input type="text" name="name" aria-label="Write your full name." id="full-name"
-              placeholder="First & Last Name" required>
-            <input type="text" name="replyto" aria-label="Write your email address." id="email-address"
-              placeholder="your.email@email.com" required>
+            <div id="contact-name">
+              <p>First & Last Name:</p>
+              <input type="text" name="name" aria-label="Write your full name." id="full-name"
+                placeholder="First & Last Name" required>
+            </div>
+            <div id="contact-email">
+              <p>Email Address:</p>
+              <input type="text" name="reply-to" aria-label="Write your email address." id="email-address"
+                placeholder="your.email@email.com" required>
+            </div>
           </div>
-          <textarea name="message" aria-label="Write your message." id="message" placeholder="Message"
-            required></textarea>
+          <div id="contact-message">
+            <p>Message:</p>
+            <textarea name="message" aria-label="Write your message." id="message" placeholder="Message"
+              required></textarea>
+          </div>
           <button class="btn" type="submit">SEND</button>
         </form>
       </div>
