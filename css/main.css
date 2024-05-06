@@ -399,7 +399,7 @@ footer h2 {
 }
 
 .featured-project .live-link {
-  font-size: 0.8em;
+  font-size: 0.9em;
   color: whitesmoke;
   background-color: #E9B14C;
   border-radius: 10px;
@@ -576,7 +576,7 @@ a:hover .middle {
 }
 
 .project .live-link {
-  font-size: 0.8em;
+  font-size: 0.9em;
   color: whitesmoke;
   background-color: #E9B14C;
   border-radius: 10px;
@@ -871,6 +871,10 @@ section .repo-data {
     margin: 0;
   }
 
+  .name-title h1, .name-title h3 {
+    text-align: start;
+  }
+
   .navbar .nav-item {
     font-size: 0.9em;
   }
@@ -887,6 +891,14 @@ section .repo-data {
 
   .socials ul li i {
     font-size: 80px;
+  }
+
+  #contact {
+    padding: 75px 0;
+  }
+
+  .footer-container {
+    margin: 25px 0;
   }
 
   .contact-form {
@@ -918,7 +930,8 @@ section .repo-data {
   }
 
   .skills-list li {
-    width: 33.33%
+    width: 33.33%;
+    padding: 25px 0;
   }
 
   #projects-page section {
@@ -1039,7 +1052,8 @@ section .repo-data {
 
   #about p {
     padding: 20px 0;
-    line-height: 1.7em;
+    line-height: 1.8em;
+    font-size: 1.2em;
   }
 
   #skills {
@@ -1056,8 +1070,13 @@ section .repo-data {
     font-size: 50px;
   }
 
+  #contact {
+    padding: 100px 0 50px 0;
+  }
+
   .footer-container {
     width: 100%;
+    margin: 50px 0;
   }
 
   .footer-container .socials {
@@ -1066,7 +1085,6 @@ section .repo-data {
     align-items: center;
     width: 40%;
     margin: 0;
-    padding: 0;
   }
 
   .socials ul {
@@ -1079,6 +1097,7 @@ section .repo-data {
 
   .footer-container .contact-form {
     width: 60%;
+    padding-left: 100px;
   }
 
   .contact-form form {
