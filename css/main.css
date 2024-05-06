@@ -883,6 +883,10 @@ section .repo-data {
     margin-top: 43px;
   }
 
+  #about p {
+    padding: 15px 0;
+  }
+
   footer h2,
   footer h4 {
     width: 90%;
