@@ -1000,6 +1000,7 @@ section .repo-data {
 
   #featured-projects h2 {
     border-bottom: none;
+    padding-bottom: 25px;
   }
 
   .featured-projects-container {
@@ -1080,7 +1081,7 @@ section .repo-data {
 
   .footer-container {
     width: 100%;
-    margin: 50px 0;
+    margin: 40px 0;
   }
 
   .footer-container .socials {
