@@ -1,240 +1,328 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ken Ellingsen | Projects</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8">
-  <title>Ken Ellingsen | Projects</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@500;700&display=swap"
-    rel="stylesheet">
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/d59606f9b8.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/d59606f9b8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/main.css" />
 
-  <link rel="stylesheet" href="../css/normalize.css">
-  <link rel="stylesheet" href="../css/main.css">
+    <meta name="theme-color" content="#fafafa" />
+  </head>
 
-  <meta name="theme-color" content="#fafafa">
-</head>
-
-<body>
-  <header> <!-- Header starts -->
-    <div class="header-info">
-      <img src="../img/header-image.jpg" alt="Ken Ellingsen">
-      <div class="name-title">
-        <h1>Ken Ellingsen</h1>
-        <h3>Front End Developer</h3>
-      </div>
-    </div>
-    <div class="navbar">
-      <a href="../index.html" class="nav-item">Home</a>
-      <a href="#" class="nav-item dropdown">Projects</a>
-      <div class="dropdown-content hide">
-        <a href="../projects/index.html#react-projects">React</a>
-        <a href="../projects/index.html#javascript-projects">JavaScript</a>
-        <a href="../projects/index.html#html-css-projects">HTML/CSS</a>
-        <a href="../repo-gallery/index.html">Repo Gallery</a>
-      </div>
-      <a href="../index.html#about" class="nav-item">About</a>
-      <a href="../index.html#skills" class="nav-item">Skills</a>
-      <a href="#contact" class="nav-item">Contact</a>
-    </div>
-  </header>
-
-  <main id="projects-page"> <!-- Main content starts -->
-    <section id="react-projects">
-      <h2>React Projects</h2>
-      <div class="projects-container">
-        <div class="project">
-          <h3>Name Tag Generator</h3>
-          <div class="content-container">
-            <a href="https://kj93ld.csb.app/" target="_blank">
-              <img src="../img/name-tag-generator.png" alt="Name Tag Generator screenshot">
-              <div class="middle">
-                <div class="text">Click to see the live site!</div>
-              </div>
-            </a>
-            <p class="live-link">Click the image to see the live site!</p>
-            <p>A name tag generation app built using React. Key features are the ability to create new name tags using
-              stateful components, change events, and click events. The latest version makes use of lifecycle methods to
-              save the nametags using local storage.</p>
-            <p>
-              <span>Skills:</span> ES6, JSX, Managing data flow
-            </p>
-          </div>
-        </div>
-        <div class="project">
-          <h3>Sticky Note App</h3>
-          <div class="content-container">
-            <a href="https://wl85y4.csb.app/" target="_blank"><img src="../img/sticky-note-ui.png"
-                alt="Sticky Note UI screenshot">
-              <div class="middle">
-                <div class="text">Click to see the live site!</div>
-              </div>
-            </a>
-            <p class="live-link">Click the image to see the live site!</p>
-            <p>An app built using React to add, remove, and edit sticky notes while taking advantage of the browser's
-              local storage to save the notes. Built as a greenfield project, this app displays the use of managed
-              component trees, data flow, and interactivity through the development process from the ground up. The
-              interactivity of the add, removal, and editing showcases the use of various event listeners passing props
-              between modules to achieve their functionality.</p>
-            <p>
-              <span>Skills:</span> ES6, JSX, Managing data flow, Manipulating the DOM
-            </p>
-          </div>
+  <body>
+    <header>
+      <!-- Header starts -->
+      <div class="header-info">
+        <img src="../img/header-image.jpg" alt="Ken Ellingsen" />
+        <div class="name-title">
+          <h1>Ken Ellingsen</h1>
+          <h3>Front End Developer</h3>
         </div>
       </div>
-    </section>
-
-    <section id="javascript-projects">
-      <div class="divider"></div>
-      <h2>JavaScript Projects</h2>
-      <div class="projects-container">
-        <div class="project">
-          <h3>GitHub Repo Gallery</h3>
-          <div class="content-container">
-            <a href="https://ken-ellingsen.github.io/github-repo-gallery/" target="_blank"><img
-                src="../img/github-repo-gallery.png" alt="Github Repo Gallery screenshot">
-              <div class="middle">
-                <div class="text">Click to see the live site!</div>
-              </div>
-            </a>
-            <p class="live-link">Click the image to see the live site!</p>
-            <p>A webpage built using HTML5, CSS3, and JavaScript accessing the GitHub REST API in order to cleanly
-              display all of my repos hosted on GitHub in one searchable location. Clicking on each repo name will
-              display the repo's details including the description, languages used, and a link to the repository itself.
-            </p>
-            <p>
-              <span>Skills:</span> Manipulating the DOM, APIs, Vanilla JavaScript
-            </p>
-          </div>
+      <div class="navbar">
+        <a href="../index.html" class="nav-item">Home</a>
+        <a href="#" class="nav-item dropdown">Projects</a>
+        <div class="dropdown-content hide">
+          <a href="../projects/index.html#react-projects">React</a>
+          <a href="../projects/index.html#javascript-projects">JavaScript</a>
+          <a href="../projects/index.html#html-css-projects">HTML/CSS</a>
+          <a href="../repo-gallery/index.html">Repo Gallery</a>
         </div>
-        <div class="project">
-          <h3>Guess the Word Game</h3>
-          <div class="content-container">
-            <a href="https://ken-ellingsen.github.io/guess-the-word-game/" target="_blank"><img
-                src="../img/guess-the-word-game.png" alt="Guess the Word Game screenshot">
-              <div class="middle">
-                <div class="text">Click to see the live site!</div>
-              </div>
-            </a>
-            <p class="live-link">Click the image to see the live site!</p>
-            <p>A web app built using HTML5, CSS3, JavaScript, and an API to source random words. In this game players
-              guess the word by entering one letter at a time. If the player guesses all the letters correctly before
-              they use up their allotted guesses, they win!</p>
-            <p>
-              <span>Skills:</span> Manipulating the DOM, Vanilla JavaScript
-            </p>
-          </div>
-        </div>
+        <a href="../index.html#about" class="nav-item">About</a>
+        <a href="../index.html#skills" class="nav-item">Skills</a>
+        <a href="#contact" class="nav-item">Contact</a>
       </div>
-    </section>
+    </header>
 
-    <section id="html-css-projects">
-      <div class="divider"></div>
-      <h2>HTML/CSS Projects</h2>
-      <div class="projects-container">
-        <div class="project">
-          <h3>Rogue Pickings</h3>
-          <div class="content-container">
-            <a href="https://ken-ellingsen.github.io/responsive-rogue-pickings/" target="_blank"><img
-                src="../img/rogue-pickings.png" alt="Rogue Pickings website screenshot">
-              <div class="middle">
-                <div class="text">Click to see the live site!</div>
-              </div>
-            </a>
-            <p class="live-link">Click the image to see the live site!</p>
-            <p>A sample webpage built for a fictional food delivery truck. This page uses responsive design elements
-              allowing it to be optimally viewed across all devices and screen sizes.</p>
-            <p>
-              <span>Skills:</span> CSS3, Flexbox, HTML5, Media Queries, Responsive Typography
-            </p>
-          </div>
-        </div>
-        <div class="project">
-          <h3>Unplugged</h3>
-          <div class="content-container">
-            <a href="https://ken-ellingsen.github.io/unplugged/" target="_blank"><img src="../img/unplugged.png"
-                alt="Unplugged website screenshot">
-              <div class="middle">
-                <div class="text">Click to see the live site!</div>
-              </div>
-            </a>
-            <p class="live-link">Click the image to see the live site!</p>
-            <p>A sample multipage website built for a fictional company retreat service. This website features
-              responsive design allowing it to be viewd optimally across all devices and screen sizes. Additional
-              features include the use of icon fonts through Font Awesome and an embedded map using iFrames.</p>
-            <p>
-              <span>Skills:</span> CSS3, Flexbox, HTML5, Media Queries, Responsive Typography
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer id="contact"> <!-- Footer starts -->
-    <h2>Reach out if you'd like to connect!</h2>
-    <div class="footer-container">
-      <nav class="socials">
-        <ul>
-          <li><a href="https://www.linkedin.com/in/ken-ellingsen-a6220ba3/" target="_blank"><i
-                class="fa-brands fa-linkedin"></i></a>
-          </li>
-          <li><a href="https://github.com/ken-ellingsen" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-        </ul>
-      </nav>
-      <div class="contact-form">
-        <form action="https://formspree.io/f/xbjnzqep" method="POST">
-          <div class="contact-info">
-            <div id="contact-name">
-              <p>First & Last Name:</p>
-              <input type="text" name="name" aria-label="Write your full name." id="full-name"
-                placeholder="First & Last Name" required>
-            </div>
-            <div id="contact-email">
-              <p>Email Address:</p>
-              <input type="text" name="reply-to" aria-label="Write your email address." id="email-address"
-                placeholder="your.email@email.com" required>
+    <main id="projects-page">
+      <!-- Main content starts -->
+      <section id="react-projects">
+        <h2>React Projects</h2>
+        <div class="projects-container">
+          <div class="project">
+            <h3>Name Tag Generator</h3>
+            <div class="content-container">
+              <a href="https://kj93ld.csb.app/" target="_blank">
+                <img
+                  src="../img/name-tag-generator.png"
+                  alt="Name Tag Generator screenshot"
+                />
+                <div class="middle">
+                  <div class="text">Click to see the live site!</div>
+                </div>
+              </a>
+              <p class="live-link">Click the image to see the live site!</p>
+              <p>
+                A name tag generation app built using React. Key features are
+                the ability to create new name tags using stateful components,
+                change events, and click events. The latest version makes use of
+                lifecycle methods to save the nametags using local storage.
+              </p>
+              <p><span>Skills:</span> ES6, JSX, Managing data flow</p>
             </div>
           </div>
-          <div id="contact-message">
-            <p>Message:</p>
-            <textarea name="message" aria-label="Write your message." id="message" placeholder="Message"
-              required></textarea>
+          <div class="project">
+            <h3>Sticky Note App</h3>
+            <div class="content-container">
+              <a href="https://wl85y4.csb.app/" target="_blank"
+                ><img
+                  src="../img/sticky-note-ui.png"
+                  alt="Sticky Note UI screenshot"
+                />
+                <div class="middle">
+                  <div class="text">Click to see the live site!</div>
+                </div>
+              </a>
+              <p class="live-link">Click the image to see the live site!</p>
+              <p>
+                An app built using React to add, remove, and edit sticky notes
+                while taking advantage of the browser's local storage to save
+                the notes. Built as a greenfield project, this app displays the
+                use of managed component trees, data flow, and interactivity
+                through the development process from the ground up. The
+                interactivity of the add, removal, and editing showcases the use
+                of various event listeners passing props between modules to
+                achieve their functionality.
+              </p>
+              <p>
+                <span>Skills:</span> ES6, JSX, Managing data flow, Manipulating
+                the DOM
+              </p>
+            </div>
           </div>
-          <button class="btn" type="submit">SEND</button>
-        </form>
+        </div>
+      </section>
+
+      <section id="javascript-projects">
+        <div class="divider"></div>
+        <h2>JavaScript Projects</h2>
+        <div class="projects-container">
+          <div class="project">
+            <h3>GitHub Repo Gallery</h3>
+            <div class="content-container">
+              <a
+                href="https://ken-ellingsen.github.io/github-repo-gallery/"
+                target="_blank"
+                ><img
+                  src="../img/github-repo-gallery.png"
+                  alt="Github Repo Gallery screenshot"
+                />
+                <div class="middle">
+                  <div class="text">Click to see the live site!</div>
+                </div>
+              </a>
+              <p class="live-link">Click the image to see the live site!</p>
+              <p>
+                A webpage built using HTML5, CSS3, and JavaScript accessing the
+                GitHub REST API in order to cleanly display all of my repos
+                hosted on GitHub in one searchable location. Clicking on each
+                repo name will display the repo's details including the
+                description, languages used, and a link to the repository
+                itself.
+              </p>
+              <p>
+                <span>Skills:</span> Manipulating the DOM, APIs, Vanilla
+                JavaScript
+              </p>
+            </div>
+          </div>
+          <div class="project">
+            <h3>Guess the Word Game</h3>
+            <div class="content-container">
+              <a
+                href="https://ken-ellingsen.github.io/guess-the-word-game/"
+                target="_blank"
+                ><img
+                  src="../img/guess-the-word-game.png"
+                  alt="Guess the Word Game screenshot"
+                />
+                <div class="middle">
+                  <div class="text">Click to see the live site!</div>
+                </div>
+              </a>
+              <p class="live-link">Click the image to see the live site!</p>
+              <p>
+                A web app built using HTML5, CSS3, JavaScript, and an API to
+                source random words. In this game players guess the word by
+                entering one letter at a time. If the player guesses all the
+                letters correctly before they use up their allotted guesses,
+                they win!
+              </p>
+              <p>
+                <span>Skills:</span> Manipulating the DOM, Vanilla JavaScript
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="html-css-projects">
+        <div class="divider"></div>
+        <h2>HTML/CSS Projects</h2>
+        <div class="projects-container">
+          <div class="project">
+            <h3>Rogue Pickings</h3>
+            <div class="content-container">
+              <a
+                href="https://ken-ellingsen.github.io/responsive-rogue-pickings/"
+                target="_blank"
+                ><img
+                  src="../img/rogue-pickings.png"
+                  alt="Rogue Pickings website screenshot"
+                />
+                <div class="middle">
+                  <div class="text">Click to see the live site!</div>
+                </div>
+              </a>
+              <p class="live-link">Click the image to see the live site!</p>
+              <p>
+                A sample webpage built for a fictional food delivery truck. This
+                page uses responsive design elements allowing it to be optimally
+                viewed across all devices and screen sizes.
+              </p>
+              <p>
+                <span>Skills:</span> CSS3, Flexbox, HTML5, Media Queries,
+                Responsive Typography
+              </p>
+            </div>
+          </div>
+          <div class="project">
+            <h3>Unplugged</h3>
+            <div class="content-container">
+              <a
+                href="https://ken-ellingsen.github.io/unplugged/"
+                target="_blank"
+                ><img
+                  src="../img/unplugged.png"
+                  alt="Unplugged website screenshot"
+                />
+                <div class="middle">
+                  <div class="text">Click to see the live site!</div>
+                </div>
+              </a>
+              <p class="live-link">Click the image to see the live site!</p>
+              <p>
+                A sample multipage website built for a fictional company retreat
+                service. This website features responsive design allowing it to
+                be viewd optimally across all devices and screen sizes.
+                Additional features include the use of icon fonts through Font
+                Awesome and an embedded map using iFrames.
+              </p>
+              <p>
+                <span>Skills:</span> CSS3, Flexbox, HTML5, Media Queries,
+                Responsive Typography
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <!-- Footer starts -->
+      <h2>Reach out if you'd like to connect!</h2>
+      <div class="footer-container">
+        <nav class="socials">
+          <ul>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/ken-ellingsen-a6220ba3/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/ken-ellingsen" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xbjnzqep" method="POST">
+            <div class="contact-info">
+              <div id="contact-name">
+                <p>First & Last Name:</p>
+                <input
+                  type="text"
+                  name="name"
+                  aria-label="Write your full name."
+                  id="full-name"
+                  placeholder="First & Last Name"
+                  required
+                />
+              </div>
+              <div id="contact-email">
+                <p>Email Address:</p>
+                <input
+                  type="text"
+                  name="reply-to"
+                  aria-label="Write your email address."
+                  id="email-address"
+                  placeholder="your.email@email.com"
+                  required
+                />
+              </div>
+            </div>
+            <div id="contact-message">
+              <p>Message:</p>
+              <textarea
+                name="message"
+                aria-label="Write your message."
+                id="message"
+                placeholder="Message"
+                required
+              ></textarea>
+            </div>
+            <button class="btn" type="submit">SEND</button>
+          </form>
+        </div>
       </div>
-    </div>
-    <h4>Copyright 2024 | Ken Ellingsen</h4>
-  </footer>
+      <h4>Copyright 2024 | Ken Ellingsen</h4>
+    </footer>
 
+    <script src="../js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/main.js"></script>
 
-  <script src="../js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="../js/plugins.js"></script>
-  <script src="../js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
-
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "anonymizeIp", true);
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </body>
 </html>
