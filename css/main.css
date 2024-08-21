@@ -352,10 +352,17 @@ footer h2 {
 }
 
 .featured-project {
+  padding-top: 40px;
+}
+
+.project-card {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 20px 0;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0;
 }
 
 .featured-project a {
@@ -372,6 +379,7 @@ footer h2 {
   display: block;
   transition: .5s ease;
   backface-visibility: hidden;
+  border: 1px solid whitesmoke;
 }
 
 .featured-project .middle {
@@ -419,7 +427,12 @@ footer h2 {
   background-color: #CAC691;
   border-radius: 30px;
   padding: 40px 40px;
-  margin-bottom: 2px;
+  margin-bottom: 40px;
+}
+
+#about, #skills {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 #about .content-container,
@@ -451,7 +464,6 @@ footer h2 {
   background-color: #CAC691;
   border-radius: 30px 30px 0 0;
   padding: 40px 20px 20px 20px;
-  width: 100%;
 }
 
 #skills .skills-list {
@@ -994,12 +1006,13 @@ section .repo-data {
   }
 
   #featured-projects {
-    padding: 120px 0;
+    padding: 80px 0;
   }
 
   #featured-projects h2 {
     border-bottom: none;
     padding-bottom: 25px;
+    text-align: center;
   }
 
   .featured-projects-container {
@@ -1008,11 +1021,18 @@ section .repo-data {
 
   .featured-project {
     width: 33.33%;
+    margin-top: 20px;
+    padding: 20px 50px;
+  }
+
+  .project-card {
+    height: 100%;
     flex-direction: column;
-    align-items: center;
     justify-content: flex-start;
-    margin: 20px 0;
-    padding: 10px 75px;
+  }
+
+  .featured-project h3 {
+    text-align: center;
   }
 
   .featured-project a {
@@ -1040,6 +1060,8 @@ section .repo-data {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   #about {
