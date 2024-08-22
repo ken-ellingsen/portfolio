@@ -2,7 +2,7 @@
 const dropdown = document.querySelector(".dropdown");
 const dropdownContent = document.querySelector(".dropdown-content");
 const header = document.querySelector(".header-info");
-const homepage = document.querySelector("#home-page");
+const main = document.querySelector("main");
 
 dropdown.addEventListener("mouseover", function () {
     dropdownContent.classList.add('show');
@@ -26,7 +26,7 @@ header.onmouseover = function (e) {
         }
     }
 }
-homepage.onmouseover = function (e) {
+main.onmouseover = function (e) {
     if (!e.target.matches('.dropdown')) {
         if (dropdownContent.classList.contains('show')) {
             dropdownContent.classList.remove('show');
