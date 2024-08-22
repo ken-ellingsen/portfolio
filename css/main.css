@@ -878,6 +878,7 @@ section .repo-data {
 
   .header-info {
     justify-content: flex-start;
+    padding: 35px 0;
   }
 
   header img {
