@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Ken Ellingsen -- Owner -- https://www.linkedin.com/in/ken-ellingsen/
 
 # THANKS
 
-    <name>
+    Skillcrush
 
 # TECHNOLOGY COLOPHON
 
