@@ -500,6 +500,7 @@ footer h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-top: 10px;
 }
 
 
@@ -511,7 +512,7 @@ footer h2 {
 }
 
 #projects-page h2 {
-  padding-top: 50px;
+  padding: 30px 0;
 }
 
 #projects-page section .projects-container {
@@ -528,7 +529,7 @@ footer h2 {
   align-items: center;
   padding: 20px 10px;
   background-color: white;
-  margin: 20px;
+  margin: 20px 10px;
   box-sizing: border-box;
   border-radius: 10px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -956,6 +957,10 @@ section .repo-data {
   .skills-list li {
     width: 33.33%;
     padding: 25px 0;
+  }
+
+  #projects-page {
+    padding-top: 0;
   }
 
   #projects-page section {
