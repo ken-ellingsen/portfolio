@@ -526,7 +526,12 @@ footer h2 {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 30px;
+  padding: 20px 10px;
+  background-color: white;
+  margin: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 .project .content-container {
@@ -547,11 +552,13 @@ footer h2 {
 .project img {
   width: 100%;
   height: auto;
+  border: 1px solid #CAC691; 
   border-radius: 10px;
   opacity: 1;
   display: block;
   transition: .5s ease;
   backface-visibility: hidden;
+  margin: 20px 0;
 }
 
 .project .middle {
@@ -561,7 +568,7 @@ footer h2 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
+  -ms-transform: translate(-50%, -50%);
 }
 
 a:hover img {
@@ -584,7 +591,7 @@ a:hover .middle {
 }
 
 .project p {
-  padding: 5px 20px;
+  padding: 20px 20px;
   text-align: left;
   width: 100%;
 }
@@ -1134,7 +1141,7 @@ section .repo-data {
   }
 
   #projects-page .project {
-    width: 50%;
+    width: 47%;
     padding: 30px;
   }
 
